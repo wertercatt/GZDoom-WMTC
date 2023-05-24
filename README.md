@@ -14,3 +14,4 @@ We Mapped This City uses assets from the following:
 
 - Doom 2 by id Software
 - Chex Quest 3 by Charles Jacobi and Digital Cafe
+- Aliens-TC by Justin Fisherz
