@@ -1,0 +1,231 @@
+***************************** presenting... ***********************************
+-------------------------------------------------------------------------------
+          the ULTIMATE SIMPSONS-DooM2: Hell in Springfield!!!
+_______________________________________________________________________________
+
+---------------------------------- NOTICE -------------------------------------
+
+     This wad takes advantage of special features only found in the ZDoom
+source port. ZDoom is available for download at http://zdoom.notgod.com. The
+wad is fully compatible with other versions of Doom, including the original
+Id doom2.exe. I am unsure about Mac Doom compatibility. The ZDoom features used
+keep the characters from saying each others lines. In other word for best
+game play results use ZDoom. Make sure you have doom2.wad in the same folder
+as the simpdoom.wad and zdoom.exe.
+
+------------------------------- INSTALLATION ----------------------------------
+
+     Ideally you will want to download ZDoom to play this wad, but if you are
+using the old doom2.exe from Id you will want to run the install.bat file. It
+will make the wad playable by adding all the Doom2 graphics to it. 
+
+To run Ultimate Simpsons Doom type one of the following:
+zdoom -file simpdoom.wad
+doom2 -file simpdoom.wad
+
+     For portfolio evaluation purposes, I have included several save-game files
+of locations that highlight the modifications made to the sprites and textures.
+You may want to turn on god-mode before proceeding in order to get a good look
+at the bosses. 
+
+---------------------------------- WHY? ---------------------------------------
+
+     After playing this wad, I would imagine you'd be asking yourself one ques-
+tion... "Why?" Why the hell did I spend 2 weeks creating this elaborate modifi-
+cation of DooM2? Well, as a professional, award-winning commercial animator at
+a small but reputable studio in Dallas, I found myself with a lot of free time 
+on my hands during a slow project season with very few clients. I was poking 
+around AOL for some game demos I could download when I found the original SIMP-
+SONS DooM patch created by "Spooky" Steve Blauwkamp and "Decapitated" Chuck
+Fuoco. The .wav files they chose for the sounds were hilarious, except they ran
+so long that they'd all run together during game play, making them difficult
+to listen to. The artwork on the sprites was very creative, although somewhat
+primitive-looking with a limited number of animated frames per character. It
+was still pretty fun, but being such a discernable animator, I felt compelled
+to improve it for my own satisfaction. Besides, I did have a LOT of free time, 
+as I said. 
+
+     So, if the old DooM2 has become tiresome and dull, these wads will add a 
+whole new look to those drab textures. The original design is almost unrecog-
+nizable in some places! Now if I can just figure out the level editor...
+
+-------------------------------- WHAT'S NEW? ----------------------------------
+
+     Every sprite (except the player) was completely reanimated, including a lot 
+of the still-object sprites. They have the same number of frames as the original
+DooM2, each with it's own original death sequence which I think you'll find
+amusing. Heh heh heh... 
+                          
+                                * the cast * 
+   
+You: Homer 
+Player: no modifications
+Zombieman: Moe the bartender
+Shotgun guy: Police Chief Wiggum
+Heavy weapon dude: Grampa Abraham Simpson
+Imp: Ned Flanders 
+Demon: Barney (the drunk guy)
+Lost soul: Krusty the Clown flying head
+Pain Elemental: TV showing the Krusty the Clown Show, with Itchy & Scratchy
+Cacodemon: the guy in the Bee-suit on the Spanish television channel
+Hell Knight: Apu, the Quickie-Mart manager
+Baron of Hell: Sideshow Bob
+Arachnotron: Maggie Simpson
+Revenant: Bart Simpson
+Mancubus: Willie the Scotsman-groundskeeper at Springfield Elementary
+Arch-Vile: Marge Simpson
+Spider Mastermind: Cyber-Smithers Tank (Wayland Smithers, Mr. Burns' flunky)
+CyberDemon: Robo-Burns Mecha-Suit (Montgomery Burns, Homer's boss)
+the Secret Level Nazi-guy: Evil Homer-bot
+
+     A lot of the patches and flats have been modified with wacky patterns and
+colorful psychadelic sequences, as well as some entirely original Simpson art
+here and there. Although it's somewhat cartoony-looking, I managed to keep the
+gore motif. Oh, and I got a little lazy after a couple of weeks of alterations,
+so I threw in a couple of "cheesecake" pics of hot babes on the walls (and one 
+object-sprite). Nothing notty, just a couple of shots of Christina Applegate, 
+the YUMMIEST woman on TV and film in my opinion, and one other woman who I 
+can't identify but she's striking an interesting pose (the sprite is hard to
+find in the DooM2 levels, but it's all over the master levels).
+ I should warn you that some of the patterns were duplicated over certain types 
+of walls, so those hidden doors may be harder to find! 
+
+     The essential graphics have been altered including the backgrounds between
+levels and the roll-call at the end of the game, plus a WICKED title screen!!!
+The status bar is different, complete with lil' Homer heads in the center box. 
+I was afraid to mess with the text. I tried it with the original DooM once, and 
+it messed everything up. 
+
+        Most of the sounds were extracted from the original SimpsonsDooM patch,
+with the length edited for better game play. The original had such perfectly
+chosen sound bytes from the show, that I didn't dare modify them, even though
+one of them doesn't fit the character it's assigned to. More on that later.
+
+     I managed to swap out most of the music files with some amusing midi files
+I got off AOL. Naturally, I HAD to get the Simpson's theme song in there!
+     
+---------------------------------- HOW? ---------------------------------------
+
+    I think the reason this took the better part of a month, is that I have 
+absolutely NO programming skills, and had a difficult time getting Wintex to 
+work for me. I finally realized that as I kept adding sprites to my main wad 
+for testing, I was building up the wadinfo file with each batch of changes. 
+After a while, the program simply crashed every time I tried to do anything
+with an error message I didn't understand. Once I figured this out, it went
+pretty smoothly, but each new test wad took about an hour to build (it took
+2 hours to create the final versions!). 
+    All the files were extracted with Wintex 3.0. All the sprites were 
+imported into Autodesk Animator Pro (the best damn 2-D animation software
+in existence!), then split up into individual flics of each character, and 
+faded out to use as a trace reference for the sprites' moves. Then came the 
+tricky part. I had to convert the new frames to .bmp files that would replace 
+the DooM files. I couldn't figure out how to batch-save them over the DooM
+art, since the frames aren't sequentially numbered, so I had to save them 
+ONE... BY... ONE. Almost 1000 images. Just when I thought that would be the 
+worst part, I found that the wad-building process had thrown all the char-
+acter's positions all out of whack, so they bounced all over the screen when
+played. I couldn't find a way to batch it in Wintex, so using Wintex 4.0, I
+had to re-align each individual frame. It wasn't as tedious as the saving 
+process, but it was still a pain towards the end, when I had replaced all
+the art.
+    The patches, flats and graphics were considerably easier. I just painted
+over the original files in Fractal Painter. 
+    The Cyber-Smithers and Homer-Bot were built using 3-D Studio. It started 
+off as just an experimental thing, but the Smithers came out so nice that I 
+kept it. The Homer isn't as cool, but that sprite doesn't appear in the game
+much anyway. 
+
+--------------------------------- ANY BUGS? -----------------------------------
+
+     I haven't found any problems with the final yet, other than the asthetic
+discrepancies in the wall images not always blending together properly, and the
+one mismatched voice. When Marge/ArchVile is walking around, a wav file of Mayor
+Quimby is assigned to her. It was just so funny, I had to stick it in the game 
+somewhere! By the way, I changed that demon's "flame attack" to something a bit
+different. I just hated the way the fire-effect completely abscured your vision.
+     Also, the Homer head in the status bar doesn't always properly match the
+amount of damage he's taken. I might've fixed it before I upload this, though.
+     The only other problem is the actual SIZE of the sprites. I drew them a bit
+larger than the originals so that the detail and facial expressions were clearly
+visible. This causes the player's perspective to appear slightly shorter, as if
+Homer had shrunk in the wash! It's a minor annoyance, but this also causes the 
+Robo-Burns' missles to shoot out of his groin, rather than his chest. Oops! Well,
+ I guess it's funnier that way. 
+
+------------------------------ DOMO ARIGATO... --------------------------------        
+     Many thanks to ID software, of course. Maybe I can get a graphic production
+job using this as part of my portfolio? We shall see...
+     Thanks to GT Interactive for the Maximum Doom CD (which has a newer version
+of the original Simpsons DooM on it). I wish I had discovered this patch file
+before the CD was produced. 
+     Thankyou, Matt Groening and FOX Television (and Klasky Csupo Studios), for 
+creating the most hilarious (and longest running) animated series ever! I hope
+and pray that it will continue for another decade, if not longer. 
+     Unfortunately, I didn't think to document the credits for the midi files I 
+downloaded, but I should at least acknowledge the songs used:
+      
+     The Simpsons theme, The theme from The Munsters, "Miserlou" (from Pulp
+Fiction), The theme from "StarBlazers" (Space Cruiser Yamato), the Hogan's 
+Heroes theme song, the Pink Panther theme, the theme from Chef!, the Urusei
+Yatsura (Lum) theme, "Linus" from the Peanuts TV episodes, the theme from 
+I Dream of Jeannie, the Dating Game theme, and the theme from Monty Python's 
+Flying Circus are all copyrighted and owned by their respective companies and
+creators. There. 
+
+     Lastly, but certainly not leastly, thanks to Steve Blauwkamp and Chuck 
+Fuoco for the original Simpsons DooM, and for giving me something to do while
+in between projects.
+
+------------------------------ WALTER SAYS... ---------------------------------
+
+                                                                 (03/09/2002)
+
+     Hi, I'm Walter Stabosz. I'm gonna tell a little story about this wad.
+I helped Myk make this wad distributable. What's that mean? Well a long time 
+ago (1998) when Myk wanted to upload his wad to the cdrom.com archive they 
+rejected it because it contained images and sounds that were copyrighted by 
+Id Software. So for years this awesome wad went unplayed by the majority of the 
+Doom loving population. I was one of the lucky few who had downloaded a copy of 
+this wad when it was still up on a website Myk had made. I would have never 
+heard about this wad if I hadn't emailed Myk in 1998 about a Southpark wad he
+was working on.
+
+     A couple of years when by and a couple of hard drives got erased, and
+when I wanted to play this wad again I could not find it! I couldn't even find
+Myk's email address. After a few weeks of searching, with the help of  I found 
+an old newsgroup post he had done.
+
+http://groups.google.com/
+groups?selm=19980313073401.CAA11240%40ladder01.news.aol.com&output=gplain
+
+Once again I contacted Myk and told him I wanted the wad and furthermore wanted
+to make it distributable. He promptly mailed me a zip disk and I got to work.
+It actually only took me a few hours to remove the copyrighted Id material. 
+However since I had this wad in my hands I thought, why not improve it. I
+checked around and found that with the sndinfo.lmp file in ZDoom, I could fix
+the annoying monsters saying each others lines bug. 
+
+The rest of the time spend on the wad I was searching the Internet for Simpsons
+sound clips. It is hard to find good quality sound clips! Eventually I recorded
+some sounds from The Simpsons Wrestling game for Playstation and The Simpsons
+Road Rage for PS2. I also added another song, Inagodadavida by Iron Butterfly.
+The zip file also includes test.wad which is just a map with all the monster
+in individual rooms. I used it for wad testing purposes.
+
+Finally it is done. Enjoy.
+
+If you want, you can reach me at wstabosz82@yahoo.com
+
+------------------------------------- MORE? -----------------------------------
+
+     Who knows? First I intend to send this to ID with my resume and portfolio
+before I do anything else, but I have been considering creating other patch-wads
+based on various cartoon shows. I may do a Looney-DooM with all the classic 
+Warner Brothers charcters. I would rather do one based on my favorite WB show, 
+"Steven Spoelberg presents: FREAKAZOID!", but there are hardly any good wav
+files available on-line, and I don't have the resources to record my own just
+yet. If you have any comments or suggestions, my e-mail address is:
+                                
+   ArtCfartsy@aol.com
+
+Thanks for reading all this, and ENJOY!!!

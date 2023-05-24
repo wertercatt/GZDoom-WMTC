@@ -1,0 +1,83 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+# DeHackEd Patch for ZDoom
+
+[STRINGS]
+
+GOTARMOR	= Picked up storm trooper armor.
+GOTMEGA		= Picked up special forces armor!
+GOTHTHBONUS	= Picked up an oxygen bottle.
+GOTARMBONUS	= Picked up an armor patch.
+GOTSTIM		= Picked up a medistim.
+GOTMEDINEED	= Picked up a medipack that you REALLY need!
+GOTMEDIKIT	= Picked up a medipack.
+GOTSUPER	= You are revitalised\nby the Power of the Force!
+GOTBLUECARD	= Picked up a blue code cylinder.
+GOTYELWCARD	= Picked up a yellow code cylinder.
+GOTREDCARD	= Picked up a red code cylinder.
+GOTBLUESKUL	= Picked up a blue override cylinder.
+GOTYELWSKUL	= Picked up a yellow override cylinder.
+GOTREDSKULL	= Picked up a red override cylinder.
+GOTINVUL	= You are One with the Force\nand the Force is with you!
+GOTBERSERK	= You go berserk with rage\nand feel the strength of the Force!
+GOTINVIS	= You are hidden from view\nby the shadow of the Force!
+GOTSUIT		= Hazardous Material Suit
+GOTMAP		= Satellite Navigation Device
+GOTVISOR	= You see all in darkness\nby the Light of the Force!
+GOTMSPHERE	= You are reborn refreshed\nby the Will of the Force!
+GOTCLIP		= Picked up electron charges.
+GOTCLIPBOX	= Picked up a box of electron charges.
+GOTROCKET	= Picked up a neutron bolt.
+GOTROCKBOX	= Picked up a crate of neutron bolts.
+GOTCELL		= Picked up Dark Mana.
+GOTCELLBOX	= Picked up a LOT of Dark Mana!
+GOTSHELLS	= Picked up positron charges.
+GOTSHELLBOX	= Picked up a box of positron charges.
+GOTBACKPACK	= Picked up a crate full of ammo!
+GOTBFG9000	= Unholy Bible!\nYou are consumed by the Dark Side!
+GOTCHAINGUN	= You got the pulser!
+GOTCHAINSAW	= Lightsabre!\nAn elegant weapon for a more civilized age.
+GOTLAUNCHER	= You got the bolt launcher!
+GOTPLASMA	= Evil Scepter!\nYou are one with the Dark Side!
+GOTSHOTGUN	= You got the blaster!
+GOTSHOTGUN2	= You got the particle accelerator!
+
+PD_BLUEO	= You need a blue cylinder to activate this object
+PD_REDO		= You need a red cylinder to activate this object
+PD_YELLOWO	= You need a yellow  cylinder to activate this object
+PD_BLUEK	= You need a blue cylinder to open this door
+PD_REDK		= You need a red cylinder to open this door
+PD_YELLOWK	= You need a yellow cylinder to open this door
+PD_BLUEC	= You need a blue code cylinder to open this door
+PD_REDC		= You need a red code cylinder to open this door
+PD_YELLOWC	= You need a yellow code cylinder to open this door
+PD_BLUES	= You need a blue override cylinder to open this door
+PD_REDS		= You need a red override cylinder to open this door
+PD_YELLOWS	= You need a yellow override cylinder to open this door
+PD_ANY		= Any cylinder will open this door
+PD_ALL3		= You need all three cylinders to open this door
+PD_ALL6		= You need all six cylinders to open this door
+STSTR_FAADDED	= Ammo (no cylinders) Added
+
+CC_ZOMBIE	= Storm Trooper
+CC_SHOTGUN	= Bounty Hunter
+//CC_HEAVY	= HEAVY WEAPON DUDE
+CC_IMP		= Wookie
+CC_DEMON	= Gamorrean
+CC_LOST		= Interrogation Unit
+CC_CACO		= Probe Droid
+//CC_HELL	= HELL KNIGHT
+CC_BARON	= Imperial Guard
+//CC_ARACH	= ARACHNOTRON
+//CC_PAIN	= PAIN ELEMENTAL
+//CC_REVEN	= REVENANT
+//CC_MANCU	= MANCUBUS
+//CC_ARCH	= Emperor Palpatine
+CC_SPIDER	= AT-ST
+CC_CYBER	= Mech Trooper
+CC_HERO		= Rebel Scum

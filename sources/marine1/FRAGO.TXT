@@ -1,0 +1,44 @@
+
+                        MARINE DOOM
+
+                For use with MARINE1.WAD
+
+WARNING ORDER (FRAG ORD??)
+
+A.  SITUATION:
+
+        1.  ENEMY:  Enemy has occupied small villa to the North of our current
+        position and is preparing to assault our defensive position.  Estimate
+	10-15 enemy equipped with soviet small arms (shotguns and small caliber
+	automatic and semi-automatic weapons).
+
+        2.  Friendly:  Our Company is positioned at the extreme eastern flank of a the
+        of a Batallion in the defense.  We are the point at the extreme eastern
+	flank.  To our west is another fireteam but they will be of no support,
+	they have problems of their own.  To our east are the bad guys.
+
+B.  MISSION:
+
+        1.  You are a fireteam member with Bravo Company, 1st Bn, 6th Marines.
+        Your fireteam is in the defense.  However, upon defending from an ememy
+	assault on your defense, you are to lead your fireteam in a counter-assault
+	which will ultimately result in routing the enemy from their Command
+	Post in a nearby villa.  The enemy has occupied a friendly city to our
+	North.  As the Patrol sweeps the area, your fireteam is expected to 
+	encounter enemy in a small villa on the outskirts of the Northern city.  No civilians are expected alive
+        in the area.
+
+C.  GENERAL  INSTRUCTIONS:
+
+        1.  Your fireteam is the extreme right flank of the entire Battalion.
+        Protect the right flank at all costs.
+
+D.  SPECIFIC INSTRUCTION:
+
+        1.  Intelligence reports expect us to encounter improved fighting
+        positions and built up urban terrrain.  Use the enemy's fighting
+        positions to defend against forward deployed ambush patrols/roving
+        patrols.
+
+        2.  After defending against attack, move fireteam to Villa to North
+        and clear of enemy presence.

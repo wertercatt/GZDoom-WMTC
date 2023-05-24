@@ -1,0 +1,655 @@
+// Enhanced functionality for use with ZDoom based ports.
+
+// TO DO:
+//
+// Arachnotron
+// Archvile
+// HellKnight
+// Spectre (properly!)
+// ChaingunGuy
+// Fatso
+// PainElemental
+// Revenant
+// WolfensteinSS
+
+ACTOR StormTrooper : Zombieman replaces Zombieman
+{
+	Obituary "%o was stopped by a storm trooper."
+}
+
+ACTOR BountyHunter : Shotgunguy replaces Shotgunguy
+{
+	Obituary "%o was blitzed by a bounty hunter."
+}
+
+ACTOR Gamorrean : Demon replaces Demon
+{
+	Obituary "%o was gutted by a gamorrean."
+}
+
+// Force Shadow (replaces spectre)
+//
+// The Emperor's experiments with
+// the Force Ghosts of his favourite
+// hunting beasts went badly awry...
+//
+ACTOR ForceShadow : Spectre replaces Spectre
+{
+	Scale 0.8
+	Obituary "%o was shredded by a force shadow."
+	SeeSound "forceshadow/sight"
+	AttackSound "forceshadow/attack"
+	PainSound "forceshadow/pain"
+	DeathSound "forceshadow/death"
+	ActiveSound "forceshadow/active"
+	States
+	{
+	Spawn:
+		FSDW EF 10 A_Look
+		Loop
+	See:
+		FSDW AABBCCDDEEFF 2 Fast A_Chase
+		Loop
+	Melee:
+		FSDW GH 8 Fast A_FaceTarget
+		FSDW I 8 Fast A_SargAttack
+		Goto See
+	Pain:
+		FSDW J 2 Fast
+		FSDW J 2 Fast A_Pain
+		Goto See
+	Death:
+		FSDW K 8
+		FSDW L 8 A_Scream
+		FSDW M 4
+		FSDW N 4 A_NoBlocking
+		FSDW O 4
+		FSDW P 4
+		FSDW Q -1
+		Stop
+	Raise:
+		FSDW QPONMLK 5
+		Goto See
+	}
+}
+
+// Used in StarDoom, I think these must have
+// come from some sort of "Aliens Lite" mod;
+// grey imps with big 80s hair and Alienesque
+// appearance, they do nevertheless resemble
+// Wookies horribly mutated by the Dark Side!
+ACTOR Wookie : DoomImp replaces DoomImp
+{
+	BloodColor "DarkGreen"
+	Obituary "%o was wasted by a wookie."
+	HitObituary "%o was ripped apart by a wookie."
+}
+
+ACTOR InterrogationUnit : LostSoul replaces LostSoul
+{
+	+NOBLOOD
+	SeeSound "skull/sight"
+	RenderStyle Normal
+	Obituary "%o was indicted by an interrogation unit."
+}
+
+ACTOR ProbeDroid : Cacodemon replaces Cacodemon
+{
+	+NOBLOOD
+	Obituary "%o was purged by a probe droid."
+	HitObituary "%o was ripped apart by a probe droid."
+	States
+	{
+	Missile:
+		HEAD BC 5 A_FaceTarget
+		HEAD D 5 Bright A_CustomComboAttack ("CacodemonBall", 32, 10 * random (1, 6), "caco/bite")
+		Goto See
+	}
+}
+
+ACTOR ImperialGuard : BaronOfHell replaces BaronOfHell
+{
+	Obituary "%o was griddled by an imperial guard."
+	HitObituary "%o was ripped apart by a imperial guard."
+}
+
+ACTOR AT_ST : SpiderMastermind replaces SpiderMastermind
+{
+	+NOBLOOD
+	Radius 64
+	Obituary "%o was annihilated by an at-st."
+	States
+	{
+	Spawn:
+		SPID AB 10 A_LookEx (0, 0, 0, 0, 0, "SeeInit")
+		Loop
+	SeeInit:
+		// "HALT, REBEL SCUM!"
+		// Let the player hear it in full
+		SPID A 3 A_Metal
+		SPID ABB 3
+		SPID C 3 A_Metal
+		SPID CDD 3
+		SPID E 3 A_Metal
+		SPID EFF 3
+		SPID A 3 A_Metal
+		SPID ABB 3
+		SPID C 3 A_Metal
+		SPID CDD 3
+		SPID E 3 A_Metal
+		SPID EFF 3
+		SPID A 3 A_Metal
+		SPID ABB 3
+		SPID C 3 A_Metal
+		SPID CDD 3
+		SPID E 3 A_Metal
+		SPID EFF 3
+		Goto See
+	}
+}
+
+ACTOR Clip_StarWars : Clip replaces Clip
+{
+	States
+	{
+	Spawn:
+		CLIP A 10
+		CLIP B 10
+		Loop
+	}
+}
+
+ACTOR ClipBox_StarWars : ClipBox replaces ClipBox
+{
+	States
+	{
+	Spawn:
+		AMMO A 10
+		AMMO B 10
+		Loop
+	}
+}
+
+ACTOR Shell_StarWars : Shell replaces Shell
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 0 A_Jump (256, "SpawnA", "SpawnB", "SpawnC", "SpawnD", "SpawnE", "SpawnF", "SpawnG")
+	SpawnA:
+		SHEL A 10
+		Goto SpawnLoop
+	SpawnB:
+		SHEL B 10
+		Goto SpawnLoop
+	SpawnC:
+		SHEL C 10
+		Goto SpawnLoop
+	SpawnD:
+		SHEL D 10
+		Goto SpawnLoop
+	SpawnE:
+		SHEL E 10
+		Goto SpawnLoop
+	SpawnF:
+		SHEL F 10
+		Goto SpawnLoop
+	SpawnG:
+		SHEL G 10
+		Goto SpawnLoop
+	}
+}
+
+ACTOR ShellBox_StarWars : ShellBox replaces ShellBox
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 0 A_Jump (256, "SpawnA", "SpawnB", "SpawnC", "SpawnD", "SpawnE", "SpawnF", "SpawnG", "SpawnH", "SpawnI", "SpawnJ")
+	SpawnA:
+		SBOX A 10
+		Goto SpawnLoop
+	SpawnB:
+		SBOX B 10
+		Goto SpawnLoop
+	SpawnC:
+		SBOX C 10
+		Goto SpawnLoop
+	SpawnD:
+		SBOX D 10
+		Goto SpawnLoop
+	SpawnE:
+		SBOX E 10
+		Goto SpawnLoop
+	SpawnF:
+		SBOX F 10
+		Goto SpawnLoop
+	SpawnG:
+		SBOX G 10
+		Goto SpawnLoop
+	SpawnH:
+		SBOX H 10
+		Goto SpawnLoop
+	SpawnI:
+		SBOX I 10
+		Goto SpawnLoop
+	SpawnJ:
+		SBOX J 10
+		Goto SpawnLoop
+	}
+}
+
+ACTOR RocketAmmo_StarWars : RocketAmmo replaces RocketAmmo
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 0 A_Jump (256, "SpawnA", "SpawnB", "SpawnC", "SpawnD", "SpawnE", "SpawnF", "SpawnG", "SpawnH", "SpawnI")
+	SpawnA:
+		ROCK A 10
+		Goto SpawnLoop
+	SpawnB:
+		ROCK B 10
+		Goto SpawnLoop
+	SpawnC:
+		ROCK C 10
+		Goto SpawnLoop
+	SpawnD:
+		ROCK D 10
+		Goto SpawnLoop
+	SpawnE:
+		ROCK E 10
+		Goto SpawnLoop
+	SpawnF:
+		ROCK F 10
+		Goto SpawnLoop
+	SpawnG:
+		ROCK G 10
+		Goto SpawnLoop
+	SpawnH:
+		ROCK H 10
+		Goto SpawnLoop
+	SpawnI:
+		ROCK I 10
+		Goto SpawnLoop
+	}
+}
+
+ACTOR RocketBox_StarWars : RocketBox replaces RocketBox
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+	SpawnLoop:
+		"####" "#" 0 A_Jump (256, "SpawnA", "SpawnB", "SpawnC", "SpawnD", "SpawnE", "SpawnF", "SpawnG", "SpawnH")
+	SpawnA:
+		BROK A 10
+		Goto SpawnLoop
+	SpawnB:
+		BROK B 10
+		Goto SpawnLoop
+	SpawnC:
+		BROK C 10
+		Goto SpawnLoop
+	SpawnD:
+		BROK D 10
+		Goto SpawnLoop
+	SpawnE:
+		BROK E 10
+		Goto SpawnLoop
+	SpawnF:
+		BROK F 10
+		Goto SpawnLoop
+	SpawnG:
+		BROK G 10
+		Goto SpawnLoop
+	SpawnH:
+		BROK H 10
+		Goto SpawnLoop
+	}
+}
+
+// A_SpawnProjectile has no spawnofs_z parameter
+ACTOR CyberRocket_StarWars : Rocket
+{
+	SeeSound null
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 9
+		MISL A 1 A_PlaySound ("weapons/rocklf")
+	SpawnLoop:
+		MISL A 1 Bright
+		Loop
+	}
+}
+
+ACTOR MechTrooper : Cyberdemon replaces Cyberdemon
+{
+	+NOBLOOD
+	Obituary "%o was melted by a mech trooper."
+	States
+	{
+	Spawn:
+		CYBR AB 10 A_LookEx (0, 0, 0, 0, 0, "SeeInit")
+		Loop
+	SeeInit:
+		// "PUT DOWN YOUR WEAPON.
+		//  YOU HAVE 20 SECONDS TO COMPLY."
+		// This is not actually 20 seconds but at
+		// least let the player hear it in full.
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3
+		CYBR D 3 A_Metal
+		CYBR D 3
+		Goto See
+	Missile:
+		CYBR E 6 A_FaceTarget
+		CYBR F 12 A_SpawnProjectile ("CyberRocket_StarWars", 96, 26)
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_SpawnProjectile ("CyberRocket_StarWars", 96, 26)
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_SpawnProjectile ("CyberRocket_StarWars", 96, 26)
+		Goto See
+	}
+}
+
+// Imperial Pulser
+ACTOR Chaingun_Starwars : Chaingun replaces Chaingun
+{
+	Weapon.SlotNumber 4
+	States
+	{
+	Fire:
+		CHGG A 0 A_PlaySound ("weapons/chngun", CHAN_WEAPON)
+		CHGG A 0 A_GunFlash
+		CHGG A 4 A_FireBullets (5.6, 0, 1, 5, "BulletPuff")
+		CHGG A 0 A_PlaySound ("weapons/chngun", CHAN_WEAPON)
+		CHGG A 0 A_GunFlash ("Flash2")
+		CHGG A 4 A_FireBullets (5.6, 0, 1, 5, "BulletPuff")
+		CHGG A 0 A_PlaySound ("weapons/chngun", CHAN_WEAPON)
+		CHGG A 0 A_GunFlash ("Flash3")
+		CHGG A 4 A_FireBullets (5.6, 0, 1, 5, "BulletPuff")
+		CHGG A 0 A_ReFire
+		Goto Ready
+	Flash:
+		CHGF A 4 Bright A_Light1
+		Goto LightDone
+	Flash2:
+		CHGF C 4 Bright A_Light2
+		Goto LightDone
+	Flash3:
+		CHGF B 4 Bright A_Light2
+		Goto LightDone
+	}
+}
+
+// A ball of Dark Mana
+ACTOR Cell_StarWars : Cell replaces Cell
+{
+	Inventory.PickupSound "weapons/cellpk"
+	Radius 8
+	Height 8
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		CELL BCDEFGHIJKLMNOPQ 4 Bright
+		Loop
+	}
+}
+
+// A rather BIG ball of Dark Mana!
+ACTOR CellPack_StarWars : CellPack replaces CellPack
+{
+	Inventory.PickupSound "weapons/cellpackpk"
+	States
+	{
+	Spawn:
+		CELP BCDEFG 4 Bright
+		Loop
+	}
+}
+
+// Make the regular PlasmaBall behave
+// more like the Strife FlameMissile.
+ACTOR PlasmaBall_StarWars : PlasmaBall
+{
+	+NOEXTREMEDEATH
+	DamageType Fire
+	ReactionTime 8
+	Obituary "%o was burned by %k."
+	States
+	{
+	Spawn:
+		PLSE AB 3 Bright
+		PLSE A 3 Bright A_Countdown
+		Loop
+	Death:
+		PLSE B 5 Bright A_ChangeVelocity (velx, vely, frandom (0.0, 3.0), CVF_REPLACE)
+		PLSE CDEFG 5 Bright
+		Stop
+	}
+}
+
+// Evil Scepter (from Doom Alpha)
+// Burn your enemies with the Power of the Dark Side!
+ACTOR PlasmaRifle_StarWars : PlasmaRifle replaces PlasmaRifle
+{
+	Weapon.SlotNumber 6
+	Inventory.PickupSound "weapons/plspk"
+	States
+	{
+	Ready:
+		PLSG C 1 A_WeaponReady
+		Loop
+	Deselect:
+		PLSG C 1 A_Lower
+		Loop
+	Select:
+		PLSG C 1 A_Raise
+		Loop
+	Fire:
+		PLSG E 0 Bright A_Light1
+		PLSG E 3 Bright A_FireProjectile ("PlasmaBall_StarWars", 0, 1)
+		PLSG D 1 Bright A_Light0
+		PLSG D 20 Bright A_ReFire
+		Goto Ready
+	Flash:
+		Stop
+	}
+}
+
+ACTOR BFGBall_StarWars : BFGBall replaces BFGBall
+{
+	+EXTREMEDEATH
+	DeathSound null
+	Obituary "%o was cursed by %k."
+	States
+	{
+	Death:
+		TNT1 A 0
+		TNT1 A 0 A_PlaySound ("weapons/bfgx", CHAN_6, 1.0, false, ATTN_NONE)
+		TNT1 AA 8 Bright
+		TNT1 A 8 Bright A_BFGSpray
+		TNT1 AAA 8 Bright
+		Stop
+	}
+}
+
+ACTOR BFGExtra_StarWars : BFGExtra replaces BFGExtra
+{
+	+EXTREMEDEATH
+}
+
+// Unholy Bible (from Doom Alpha)
+// Curse your enemies with the Power of the Dark Side!
+ACTOR BFG9000_StarWars : BFG9000 replaces BFG9000
+{
+	Weapon.SlotNumber 7
+	Inventory.PickupSound "weapons/bfgpk"
+	States
+	{
+	Fire:
+		BFGG D 4 Bright
+		BFGG E 5 Bright
+		BFGG F 4 Bright A_BFGSound
+		BFGG G 5 Bright
+		BFGG D 4 Bright
+		BFGG E 5 Bright
+		BFGG F 4 Bright
+		BFGG G 5 Bright
+		BFGG D 4 Bright
+		BFGG E 5 Bright
+		BFGG F 4 Bright
+		BFGG G 5 Bright
+		BFGG D 4 Bright
+		BFGG E 5 Bright
+		BFGG F 4 Bright A_GunFlash
+		BFGG G 5 Bright A_FireBFG
+		BFGG D 4 Bright
+		BFGG E 5 Bright
+		BFGG F 4 Bright
+		BFGG G 5 Bright
+		BFGG H 20 Bright A_ReFire
+		Goto Ready
+	}
+}
+
+ACTOR Berserk_StarWars : Berserk replaces Berserk
+{
+	States
+	{
+	Spawn:
+		PSTR A 8
+		PSTR B 8
+		PSTR C 8
+		Loop
+	}
+}
+
+// ZDoom already does the fading in and
+// out for us and the sprite is just a ring;
+// other sprites are provided for Vanilla.
+ACTOR BlurSphere_StarWars : BlurSphere replaces BlurSphere
+{
+	States
+	{
+	Spawn:
+		PINS E 6 Bright
+		Loop
+	}
+}
+
+ACTOR TechPillar_StarWars : TechPillar replaces TechPillar
+{
+	Health 1
+	Mass 99999
+	Radius 12
+	Height 128
+	DeathHeight 128
+	+SOLID
+	+SHOOTABLE
+	+NOBLOOD
+	+DONTGIB
+	+NOICEDEATH
+	+NODAMAGETHRUST
+	States
+	{
+	Spawn:
+		ELEC CC 18
+		ELEC D 6
+		Loop
+	Death:
+		TNT1 A 0 A_PlaySound ("techcolumn/death")
+		TNT1 AAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx (
+			"TechPillarShard", 0, 0, 48, 
+			random (-2, 2), random (-2, 2), random (3, 9), random (0, 359),
+			32)
+		TNT1 AAAA 0 A_SpawnItemEx (
+			"TechPillarShard", 0, 0, 68,
+			random (-2, 2), random (-2, 2), random (3, 9), random (0, 359),
+			32)
+	Broken:
+		ELEC EE 18
+		ELEC F -1
+		Stop
+	}
+}
+
+ACTOR TechPillarShard
+{
+	Radius 1
+	Height 1
+	Speed 15
+	PROJECTILE
+	-NOGRAVITY
+	+THRUACTORS
+	+MOVEWITHSECTOR
+	Gravity 0.6
+	RenderStyle Add
+	Alpha 0.6
+	Scale 1.3
+	DeathSound "techcolumn/shard"
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump (255, "Standard", "Small", "Tiny", "XLarge")
+	Standard:
+		ELES ABCD 1
+		Loop
+	Small:
+		TNT1 A 0 A_SetScale (0.8)
+		ELES ABCD 1
+		Loop
+	Tiny:
+		TNT1 A 0 A_SetScale (0.4)
+		ELES ABCD 1
+		Loop
+	XLarge:
+		TNT1 A 0 A_SetScale (1.6)
+		ELES ABCD 1
+		Loop
+	Death:
+		TNT1 A 0 A_SetTranslucent (0.3)
+		ELES E 125
+		Stop
+	}
+}

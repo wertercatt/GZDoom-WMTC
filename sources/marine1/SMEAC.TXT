@@ -1,0 +1,94 @@
+5 PARAGRAPH OPERATION ORDER
+
+ORIENTATION
+
+        Current Location
+
+        Location of Enemy Units
+
+        Control Measures (Assmbly Area, Atk Pos, LOD, Asslt Pos)
+
+        Terrain & Vegetation
+
+        On Call TGTS
+
+PARAGRAPH #1 - SITUATION
+
+        A.  Enemy Forces - SALUTE
+
+                Size
+                Activity
+                Location
+                Unit
+                Time
+                Equipment
+
+        B.  Friendly Forces - HAS
+
+                Higher Units
+                Adjacent Units
+                Supporting Units
+
+        C.  Attachments/Detachments - None
+
+PARAGRAPH #2 - MISSION - 5 Ws
+
+        Who
+        What
+        Why
+        When
+        Where
+
+PARAGRAPH #3 - EXECUTION
+
+        A.  Concept of Operations
+
+                1.  Scheme of Maneuver
+                        Form of Manwuver - Frontal assault
+                                Initial Formation - give a general description
+                                                    of how you will get to
+                                                    objective.
+
+                2.  Fire Support Plan - None
+
+        B.  Specific Tasks
+
+                1st Fire Team
+                2nd Fire Team
+                3rd Fire Team
+
+                Specific Tasks include:
+                - Position in initial formation
+                - Security during movement/halts
+                - Position at assault position
+                - Assigned portion of the objective
+                - Consolidation instructions
+                (Always specify which fire team will be your base unit and which
+                fire team you will be with.)
+
+        C.  Coordinating Instructions
+
+                - Time of Attack
+                - Line of Departure
+                - Check Points
+                - Assault Positions
+                - Route to Objective
+
+PARAGRAPH #4 - ADMIN. & LOGISTICS - 4 Bs
+
+        - Beans (food and water)
+        - Bullets (resupply of ammo.)
+        - Band Aids (location of the corpsman)
+        - Bad Guys (EPW treatment)
+
+PARAGRAPH #5 - COMMAND & SIGNAL
+
+        - Types of signals - hand and arm, switch to voice during attack.
+        - Location of key personnel
+                Platoon Commander
+                Platoon Sergeant
+                Squad Leader
+
+
+
+

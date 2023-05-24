@@ -1,0 +1,63 @@
+DOOM Version            : II...v1.9 suggested
+Title                   : Marine1
+Filename                : Marine1.wad
+Author                  : Sergeant Daniel G. Snyder, USMC
+Misc. Author Info       : Programmer, lan administrator, MCCDC Quantico, VA
+Description             : This is the first of what we hope will be many 
+	efforts to provide an inexpensive fire team simulation to the fire-
+	team.  Set up is a demonstration of the fire team in the defense.
+	The situation is high intensity combat- with opportunity to prosecute
+	a follow up counter attack against enemy held positions.  The intent
+	is to provide follow on improvements and enhancements following
+	user feedback on this initial offering...
+
+Installation            : You must use the Dehacked program included with 
+			  This wad to patch your Doom2 executable.. read 
+			  the enclosed txt.			
+
+Additional Credits to   : The internet community and the efforts of many
+			  enterprising people who produce excellent editors;
+			  the work of other "doomophiles" who provide excellent
+			  examples  of what can be accomplished. 	
+                          and of course....
+			Id Software for making the game.                          
+================================================================
+
+* Play Information *
+
+Episode and Level #     : map 01
+Single Player           : Yes
+Cooperative 2-4 Player  : Primary intent
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : not implemented in this version
+New Sounds              : Yes -from various sources
+New Graphics            : Yes -digitized
+New Music               : No
+Demos Replaced          : None
+Patch (super2.deh)      : Required!!!
+ 
+* Construction *
+
+Date:			: 11/21/95
+Completion Time		: three weeks (testing and revisions 1 month)
+Base                    : New level from scratch.
+Editor(s) used          : Windeu, Dehacked 3.0, Dmaud, adobephotoshop, Wintex	  		
+Known Bugs              : Hall of Mirrors effect at extreme ends of the range
+                          ..the map is rather large with open spaces.
+			  Some textures aren't mapped very well- more time
+			  could make it prettier... Oh well, sounds like a 
+                          personal problem.	
+
+
+* Copyright / Permissions *
+
+Authors may use this level as a base to build additional
+levels. You are encouraged to do so.. as long as you send your efforts back. 
+
+
+* Where to find Marine1 *
+
+http://138.156.15.33/xfers/
+TETlab BBS: commercial (703)784-4643, 4756, 4738 : Autovon 278-etc.
+
+Questions?  snyderd@mqg-smtp3.usmc.mil

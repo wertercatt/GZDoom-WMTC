@@ -1,0 +1,280 @@
+===========================================================================
+Archive Maintainer      : Please place in "themes/starwars" subdirectory.
+Update to               : Not applicable (first release)
+Advanced engine needed  : GZDoom (works in vanilla Doom with limitations)
+Primary purpose         : Single+Coop / No levels included
+===========================================================================
+Title                   : One With The Force (V1.0)
+Filename                : 1Force10.zip ... Main archive
+                          =================================================
+                          1Force.txt ..... Text file
+                          1Force.wad ..... Main WAD file
+                          1Force.deh ..... DeHackEd patch for Vanilla Doom
+                          1ForceFX.wad ... Extra FX WAD file for ZDoom only
+                          =================================================
+Release date            : 15th August 2019
+Author                  : Martin Howe
+Email Address           : [redacted]
+Twitter                 : @MartinHowe426
+Other Files By Author   : bombay72.zip, badguys.zip, clnwd154.zip,
+                          d217a17.zip, goodguys.zip, panperil.zip,
+                          symthise.zip, dd0653.zip (jointly with others).
+Misc. Author Info       : Some-time contributor to DosDoom, EDGE, ZDoom.
+
+Description             : COMMENCE PRIMARY IGNITION LIKE IT'S 1995! :P
+
+  This is a light-weight reskin-orientated mod that aims to give the player
+  a classic Star Wars Doom feel with more consistency and fewer bugs.
+
+  Modern Star Wars mods focus on a total conversion, often using resources
+  from various games and advanced scripting for ZDoom, EDGE, etc. This one
+  takes the opposite approach; instead of Doom in the Star Wars Universe,
+  it is created as if Star Wars originally took place in the Doom Universe.
+
+  Essentially a deduplication and refurbishment of the many mid-1990s Star
+  Wars mods from the "themes/starwars" subdirectory, this is designed to
+  have the classic near-vanilla feel of those mods, mostly by reskinning,
+  with as little scripting (DeHackEd, Decorate, SndInfo, etc.) as possible.
+
+  * In come monsters and pickups matching their original behaviours!
+  * Out go overused AlienDOOM guns that don't match the pickup sprites!
+  * Out go cheesy sounds like "Whoo-Hoo!" when killing a storm trooper!
+  * Pickup strings and some actors are slightly altered for consistency!
+
+  Most actors have are sprite changes only; some are slightly renamed to
+  make them more futuristic/magic looking, or for consistency with similar
+  items. In a few cases they will behave slightly differently but better in
+  ZDoom, with the overall look and feel being the same (e.g. tech pillars).
+
+  Some special effects are available that give a more pleasing experience;
+  however, they go way beyond reskinning and minor behavioural changes; they
+  are thus provided in a separate WAD file, 1ForceFX.wad, which should be
+  loaded after 1Force.wad; see the notes at the end for details. The main
+  WAD file includes the resources for them; 1ForceFX is just the scripts.
+
+  I made this purely for myself, so these ideas are highly subjective; this
+  is being shared here in case anyone is looking for something similar.
+
+Additional Credits to   : XIM for giving me a taste for Star Wars in Doom
+                          again after over a decade :)
+===========================================================================
+
+* What is included *
+
+New levels              : None
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : DECORATE, SNDINFO
+Other files required    : None
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : Not applicable
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Not tested
+Other game styles       : Not tested
+Difficulty Settings     : Not applicable
+
+* Construction *
+
+Base                    : Please refer to credits list at the end
+Build Time              : Four weeks
+Editor(s) used          : SLADE, CleanWAD, Audacity, EditPlus, Paint.Net
+
+Known Bugs              : In vanilla Doom, sounds are inappropriately
+                          shared (for example, probe droids will have pain
+                          sounds of gamorreans, wookies, etc.) and some
+                          animations are rather plain or look a bit odd.
+
+                          This is not a bug as such, but a limitation of
+                          the engine; to fix it would require stealing
+                          sounds/frames from Doom II using DeHackEd, but
+                          then it would not be extensible to Doom II.
+
+May Not Run With        : Not tested in Boom, EDGE, Legacy, Etc.
+Tested With             : GZDoom 4.1.2, Vanilla Doom V1.9U (in DosBox)
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact. I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+* Notes *
+
+FUNCTIONALITY
+=============
+Vanilla ....................... Non-functional.
+Vanilla + DeuSF ............... Sprites work with less fluent animations.
+                                Sounds work but some sounds are
+                                  inappropriately shared between actors.
+Vanilla + DeuSF + DeHackEd .... Sprites work with less fluent animations.
+                                Sounds work but some sounds are
+                                  inappropriately shared between actors.
+                                Text strings work but some are shortened.
+Chocolate, EDGE, Boom, etc. ... Not tested.
+GZDoom ........................ Fully functional.
+
+MONSTERS
+========
+Trooper ....................... Storm Trooper
+Sargeant ...................... Bounty Hunter
+Imp ........................... Wookie Mutant
+Demon ......................... Gamorrean Pig Guard
+Spectre ....................... Force Shadow
+Lost Soul ..................... Interrogator Droid
+Caco Demon .................... Probe Droid
+Baron of Hell ................. Imperial Guard
+Spider Demon .................. AT-ST
+Cyber Demon ................... Mech Trooper
+
+WEAPONS
+=======
+Fist .......................... Fist [with gloves and no knuckleduster]
+Chainsaw ...................... Light Sabre
+Pistol ........................ Electron Blaster Pistol
+Shotgun ....................... Positron Blaster Rifle
+Double-Barelled Shotgun ....... Particle Accelerator
+Chaingun ...................... Electron Pulser Rifle
+Rocket Launcher ............... Neutron Bolt Launcher
+Plasma Rifle .................. Evil Scepter [of the Force] (Doom Alpha)
+BFG 9000 ...................... Unholy Bible [of the Force] (Doom Alpha)
+
+AMMO
+====
+Clip .......................... Electron charges
+Ammo Box ...................... Box of electron charges
+Shells ........................ Positron cells
+Shell Box ..................... Box of positron cells
+Rocket ........................ Neutron bolt
+Rocket Box .................... Crate of neutron bolts
+Cell .......................... Dark [of the Force] Mana
+Cell Pack ..................... A LOT of Dark [of the Force] Mana
+Back Pack  .................... Crate of [ammo] supplies
+
+PICKUPS
+=======
+Health Bonus .................. Oxygen Bottle
+Stimpack ...................... Medistim
+Medikit ....................... Medipack
+Armor Bonus ................... Armor Patch
+Green Armor ................... Storm Trooper Armor
+Blue Armor .................... Special Forces Armor
+Blue Keycard .................. Blue code cylinder
+Yellow Keycard ................ Yellow code cylinder
+Red Keycard ................... Red code cylinder
+Blue Skull Key ................ Blue override cylinder
+Yellow Skull Key .............. Yellow override cylinder
+Red Skull Key ................. Red override cylinder
+Computer Area Map ............. Satellite Navigation Device
+Radiation Shielding Suit ...... Hazardous Material Suit
+Berserk Pack .................. Scroll of Aggression [Force magic]
+Soul Sphere ................... Cross of Purity [Force magic]
+Megasphere .................... Talisman of Repentance [Force magic]
+Invulnerability Sphere ........ Ring of the Deity [Force magic]
+Light Amplification Visor ..... Ring of the Oracle [Force magic]
+Partial Invisibility Sphere ... Ring of the Spirit [Force magic]
+
+DECORATIONS
+===========
+Explosive Barrels ............. Scrapped R2-D2s (exploding if destroyed)
+Burning Barrels ............... Scrapped R2-D2s (burning with tops off)
+Tech Column ................... Glass Tech Column (breakable in ZDoom)
+Mini Tech Light ............... Mini Tech Lamp (looks more futuristic)
+
+SPECIAL EFFECTS in 1FORCEFX.WAD
+===============================
+ 1. Particle Accelerator becomes a railgun instead of only looking like one.
+ 2. Force Curse spawns Duke 3D inspired flaming debris around its victims.
+
+NOTES
+=====
+=====
+
+Future plans (in no particular order) include extending the special effects
+WAD, an optional randomiser for multiple enemy variations, Doom 2 monsters
+and items, plus possibly a texture and item pack for Vanilla Doom maps.
+
+Replacing generic items such as powerups and tech decorations was fairly
+straightforward. However, replacing HELL style decorations does not apply
+to vanilla levels, so things like that are best left alone until some sort
+of combined "textures and items" addon can be implemented.
+
+Replacing Spectres, Revenants and Pain Elementals won't be simple reskin
+jobs; properties of these monsters and the kind of maps they are designed
+for would mean anything else wouldn't necessarily work in existing maps;
+however, there are no simple equivalents in the Star Wars universe.
+
+The Force Shadow replaces the Spectre with something a little less clumsy
+than "A Gamorrean Pig Guard With A Cloaking Device" and, in fact, replaces
+the Spectre with something similar and that could at least *possibly* have
+come from the Star Wars universe. A melee-only version of the Hell Hound. If
+you really want a backstory, let's just say that even The Emperor found that
+making Force ghosts of his best hunting beasts was a *really* bad idea :)
+
+Replacing Boss Brain ... ? !SACUL EGROEG ,EM LLIK TSUM UOY EMAG EHT NIW OT
+
+There is a high-res generic vanilla replacement texture pack (recommended
+for Xim's mod), but I don't know if there's a classic variant anywhere.
+
+The Dark Magic weapons are there because Star Wars is based on energy
+weapons and five is enough. Some sources mention Palpatine using Force
+storms and electric attacks; there was already a "BFG as Force Curse" mod
+early on. It was also sad that an Unholy Bible and Evil Scepter were planned
+for Doom but never implemented beyond the pickup sprites released by John
+Romero some years ago; so it was nice to bring them to life.
+
+CREDITS
+=======
+=======
+
+Please note that with most of these, I only used the sprites and in some
+cases have heavily edited them. This is not out of disinterest, merely that
+this is meant mainly to reskin actors rather than change their behaviour.
+
+The Force Patch ................ Sanjay Vijendran
+The Lightsaber Wad ............. Greg Kegel after Claude Martins
+Stardoom ....................... ?
+Star War GFX ................... John Wriston
+Star Wars Audio ................ Mike C and C Hopkins and Adam F
+Star Wars Doom 2 ............... Neil Bowman
+Star Wars for DOOM2 v1.33 ...... Garrett Granger
+Doom Alpha (Unholy Bible) ...... id Software / John Romero
+Doom Alpha (Evil Sceptre) ...... id Software / John Romero
+Oxygen Canister ................ Dusk, Rogue Entertainment
+Portable Rejuvination Unit ..... Blue Shadow, Rogue Entertainment
+Stim Bonus ..................... Infirnex, BloodyAcid, id Software
+Butcher Gun .................... Morpheus, NMN, WildWeasel
+Bolt Launcher .................. HeadCrab-PRO, Captain J
+Hexen Mage Hands/Ammo .......... Blox, Uboa, Raven Software
+Various stock resource edits ... id Software, Rogue Entertainment
+Weapon Sprites ................. Dolphman, Lucasarts
+Weapon Hand components ......... WildWeasel, Marty Kirra, Cutty, etc.
+Punch with gloves/no metal ..... Scuba Steve
+Supply box sprite used as base . Dreadopp
+Autogun sprite used as base .... Kuju, 3D Realms, Captain Toenail
+PDA sprite used as base ........ Scalliano
+Ring of the Owl ................ Ghastly_dragon, Black Isle Studios
+Ankh of Life ................... Blue Shadow, Raven Software
+Ring of Regeneration ........... Ghastly_dragon, Black Isle Studios, Xaser
+Talisman of the Depths ......... Ghastly_dragon, Captain Toenail
+Tech Armor ..................... Ghastly_dragon, Id Software, Raven Software
+Hazmat Suit .................... DeVloek, id Software
+Mini Tech Lamp ................. Gothic, Midway
+Glass Tech Column .............. Mor'ladim, Fate, id Software
+Hell Hound ..................... Eriance, Monolith, Ghastly_dragon, Sandypaper

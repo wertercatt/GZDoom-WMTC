@@ -1,0 +1,152 @@
+Patch File for DeHackEd v3.0
+
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 21
+Patch format = 6
+
+# DeHackEd Patch for Vanilla Doom
+
+Text 9 11
+ZOMBIEMANSTORM TROOP
+
+Text 11 11
+SHOTGUN GUYBOUNTY HUNT
+
+Text 3 3
+IMPWKI
+
+Text 5 7
+DEMONGAMOREA
+
+Text 9 9
+LOST SOULINT DROID
+
+Text 9 11
+CACODEMONPROBE ROBOT
+
+Text 13 14
+BARON OF HELLIMPERIAL GUARD
+
+Text 21 20
+THE SPIDER MASTERMINDAT-ST               
+
+Text 14 12
+THE CYBERDEMONMECH TROOPER
+
+Text 8 10
+OUR HEROREBEL SCUM
+
+Text 20 20
+Picked up the armor.Storm trooper armor 
+
+Text 24 24
+Picked up the MegaArmor!Bounty hunter armor     
+
+Text 25 26
+Picked up a health bonus.Picked up an oxygen bottle
+
+Text 25 25
+Picked up an armor bonus.Picked up an armor patch.
+
+Text 12 13
+Supercharge!Purity Cross!
+
+Text 11 9
+MegaSphere!Talisman!
+
+Text 25 24
+Picked up a blue keycard.Blue code cylinder.     
+
+Text 27 24
+Picked up a yellow keycard.Yellow code cylinder.   
+
+Text 24 24
+Picked up a red keycard.Red code cylinder.      
+
+Text 27 24
+Picked up a blue skull key.Blue override cylinder. 
+
+Text 29 28
+Picked up a yellow skull key.Yellow override cylinder.   
+
+Text 26 24
+Picked up a red skull key.Red override cylinder.  
+
+Text 21 21
+Picked up a stimpack.Picked up a medistim.
+
+Text 41 42
+Picked up a medikit that you REALLY need!Picked up a medipack that you REALLY need!
+
+Text 20 21
+Picked up a medikit.Picked up a medipack.
+
+Text 16 16
+Invulnerability!Deity Ring!     
+
+Text 8 11
+Berserk!Aggression!
+
+Text 20 20
+Partial InvisibilitySpirit Ring!        
+
+Text 24 24
+Radiation Shielding SuitHazmat Suit             
+
+Text 17 19
+Computer Area MapSatnav             
+
+Text 25 24
+Light Amplification VisorOracle Ring!            
+
+Text 17 17
+Picked up a clip.Electron charges.
+
+Text 27 24
+Picked up a box of bullets.Box of electron charges.
+
+Text 19 16
+Picked up a rocket.Neutron bolt.   
+
+Text 27 24
+Picked up a box of rockets.Crate of neytron bolts. 
+
+Text 25 24
+Picked up an energy cell.Picked up Dark Mana!    
+
+Text 30 29
+Picked up an energy cell pack.Picked up A LOT of Dark Mana!
+
+Text 27 27
+Picked up 4 shotgun shells.Pickup up positron charges.
+
+Text 34 34
+Picked up a box of shotgun shells.Picked up box of positron charges.
+
+Text 34 32
+Picked up a backpack full of ammo!Picked up a crate full of ammo! 
+
+Text 30 30
+You got the BFG9000!  Oh, yes.You got the Unholy Bible! Yes!
+
+Text 21 20
+You got the chaingun!You got the Pulser! 
+
+Text 28 31
+A chainsaw!  Find some meat!Lightsabre! One with the Force!
+
+Text 28 28
+You got the rocket launcher!You got the bolt launcher!  
+
+Text 23 23
+You got the plasma gun!Evil Scepter. The Dark!
+
+Text 20 20
+You got the shotgun!You got the blaster!
+
+Text 26 24
+You got the super shotgun!You got the railgun!    
+
+Text 20 20
+Ammo (no keys) AddedAmmo (no cylinders) 

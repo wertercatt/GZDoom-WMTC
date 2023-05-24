@@ -1,0 +1,60 @@
+// Enhanced functionality for use with ZDoom based ports.
+
+// Bounty Hunter
+shotguy/sight		dsfetsit
+shotguy/death		dsfetdth
+
+// Force Shadow
+forceshadow/sight	dsfsdsit
+forceshadow/attack	dsfsdatk
+forceshadow/pain	dsfsdpai
+forceshadow/death	dsfsddth
+forceshadow/active	dsfsdact
+
+caco/sight			dscacsit
+caco/active			dscacact
+caco/pain			dscacpai
+caco/death			dscacdth
+caco/bite			dscacbit
+caco/attack			dsfirsht
+caco/shotx			dsfirxpl
+
+skull/sight			dssklsit
+skull/active		dssklact
+skull/pain			dssklpai
+skull/melee			dssklatk
+skull/death			dsskldth
+
+weapons/bfgf		dsbfg
+weapons/bfgx		dsbfgxpl
+weapons/bfgpk		dsbfgxpl
+weapons/plspk		dsbfgxpl
+weapons/cellpk		dsgetpow
+weapons/cellpackpk	dsbfgxpl
+
+// Double-Barelled Shotgun
+// weapons/sshotf	dsdshtgn	// Copy of RAILGF1 mixed down for Vanilla Doom
+// weapons/sshoto	dsdbopn		// Silent for Vanilla Doom
+// weapons/sshotc	dsdbcls		// Silent for Vanilla Doom
+// weapons/sshotl	dsdbload	// Silent for Vanilla Doom
+
+spider/sight		dsspisee	// Better quality version but ZDoom only
+spider/active		dsspiact
+spider/pain 		dsspipai
+spider/attack		dsspiatk
+spider/death		dsspidth
+spider/walk			dsmetal
+
+cyber/sight			dscybsee	// Better quality version but ZDoom only
+cyber/active		dscybact	// Silent: Robot not Demon (DSHOOF is enough)
+cyber/pain			dscybpai	// Small explosion: Robot not Demon
+cyber/death			dscybdth
+cyber/hoof			dshoof
+
+// Electrical column
+techcolumn/death1	dseldth1
+techcolumn/death2	dseldth2
+$random techcolumn/death {techcolumn/death1 techcolumn/death2}
+techcolumn/shard1	dselshd1
+techcolumn/shard2	dselshd2
+$random techcolumn/shard {techcolumn/shard1 techcolumn/shard1}

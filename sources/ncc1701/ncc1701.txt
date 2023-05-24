@@ -1,0 +1,203 @@
+--------------------------------------------------------------------------------------------
+filename: NCC1701.wad                                                        Date :    February 2000
+Author: Ryan Polczer 
+--------------------------------------------------------------------------------------------
+
+
+
+Info:
+-----
+
+Episode and level :     DOOM2   Map01-16
+Single player       :     Yes
+Co-op                 :     Yes
+Deathmatch        :     Yes
+New Graphics      :     Yes
+New Sounds        :     Yes
+Skill levels          :     Yes
+Demos replaced :     Yes*
+Known bugs        :     None
+Editor(s) used    :     WadAuthor and WinTex  
+
+
+(*)Note:
+The Demos were recorded using Doom2 v1.9
+If you are using a DOS version other than v1.9 then you may encounter the 
+following error on startup : " ..Demo is from a different game version.." 
+         
+Don't worry about it.  Just start a "new game" REAL quick after startup (while the 
+"titlepic" is displayed, but BEFORE the game plays the first demo).
+OR start a new game using the "-warp" command 
+(type: "Doom2 -file NCC1701.wad -warp 1" )
+
+
+Setup:
+------
+
+For NCC1701.wad, you MUST run the "NCCsetup" file included in the zip archive before you 
+play the wad: 
+         
+-  Unzip all files to your Doom2 directory ( C:\DOOM2 )
+
+-  From MS-DOS : type "NCCsetup" to install the wad  (from Win95, click on "NCCsetup.bat")
+               : type "NCC1701" to play the game     (from Win95, click on "NCC1701.bat")
+
+
+
+
+
+Description:
+------------
+
+- Ncc1701.wad uses over 300 new bitmaps, 55 sound effects,  and a dozen new level-maps
+  to depict the look and feel of Star Trek (the original series and the Next Generation). 
+  This file will also replace the sprites for seven of the eight Doom2 weapons,
+  as well as the "player 1" sprite, the "former human", "former sergeant", "chaingun soldier",
+  and many of the items and scenery.  
+
+- In creating this Star Trek theme for DOOM, my original "vision" was limited to simply
+  recreating the Starships from the various TV shows, reproducing the look and feel of the 
+  shows using Bitmaps and Sound FX.  I only created three different levels, and it has occurred
+  to me that a crucial aspect of "Star Trek" is missing from my wadfile.  (ie: the variety
+  that comes with visiting a different planet each episode).  It didn't seem enough for me 
+  to just re-create the various TV sets as "walk-throughs-with-monsters", without somehow
+  addressing the "serial" nature of the Star Trek genre.
+  
+  So, then I redesigned my WAD under the following premise:  a small-sized version of the 
+  Enterprise could be created, and carried through from one level to the next, with different 
+  "level-maps" connected to the Enterprise via the transporter room.  The player would become
+  familiar with the Starship Enterprise after just a few levels, but the variety comes from 
+  having a different "adventure" connected to that same Starship on each level.
+
+  In this wad, the Enterprise changes very little from one level to the next, but in each
+  level the "planet" is different; just go to the transporter room and "beam down" to the 
+  area of the map that DOES change from level to level. 
+
+  In deathmatch games, the battles tend to center around the different "planet" areas; 
+  since the player will always rematerialize on the "ship", he/she can grab a few weapons & 
+  supplies before hitting the "transporter room" to rejoin the fight.  (This adds a unique 
+  strategic element to the game as well, since players can be prepared before rejoining a 
+  dangerous situation.)
+  
+
+
+
+The Levels:
+-----------
+
+MAP01:   "Decontimination"
+A small level, great for deathmatch games.
+In single player, you have to master the arena in order to beam up to the Enterprise.
+
+MAP02:  "The Enterprise"
+This is a homemade map of the "Original Series" Enterprise, complete with the Bridge, 
+Sick bay, Engineering, and Transporter room.  Also intended as a large Deathmatch level, 
+the exit is not hidden or protected by a key; but watch your step when you find it...
+
+MAP03:   "Standard Orbit"
+In this map the Starship Enterprise from the previous level has been reduced to a very 
+small version of the ship (limited to only the bridge and a single transporter room), 
+which has been placed in "standard orbit" around a larger level-map.  
+
+Use the transporter on the Enterprise to "beam down" to the main map for this level, 
+but be careful:  the different transporter pads on the Enterprise each lead to a different
+starting-point within the main map; this can affect your strategy for completeing the level once
+you beam down, so chose your destinations carefully...
+
+MAP04:  "The Last Outpost"
+In this map, the small-sized version of the starship Enterprise from the previous level 
+is in "orbit" around another homemade level.  This map contains a reworked version of the first level that I ever made for Doom2.  Your Transporter-room is here as well, connected to the main map as usual.  
+
+MAP05:   "The Lost Outpost"
+This is really part two of the previous map:  to finish your mission, find the transporter
+and get yourself back to the Enterprise.
+
+MAP06:  "The Other Enterprise"
+In this map you symbolically change starships, from the Enterprise to the Enterprise-D.
+the small-sized version of the original Enterprise is connected via transporter to 'Deck01' of Picard's ship.  Find the exit and take command.  
+
+
+MAP07:   "The Enterprise-D"
+My version of the Enterprise-D (including Ten Forward, the bridge, ready room, med lab,
+engineering, holodecks, dual transporter rooms, etc..)
+Although the layout of the hallways was not meant to be accurate, many of the individual rooms
+were based on set designs from the "Interactive Technical Manual".
+Start in the transporter room, and work your way through to the bridge.
+(Your objective is the command codes in Picard's tricorder.. which is probably 
+locked in the ready room) 
+
+
+MAP08:   "The Holodeck"
+Now that you've assumed command of the Enterprise-D, 
+you've got time to check out the holodecks.
+This map is a wild-west holodeck-simulation; 
+with the 'holographic' areas of the map based on Map02 & Map03 of "boothill.wad" by Tim Ash.
+(the 24th-Century areas of the map are homemade; the rest is a reworked version of 
+"Boothill").
+
+
+MAP09 & 10:   "Holodeck2" and "Holodeck3"
+Continued from the previous level, the "holograms" in this level is based on Map04 and Map01 of
+"boothill.wad" by Tim Ash.
+(Again, Tim's stuff is presented as a wild-west scenario within the larger Star Trek theme.
+And again, the 24th-century areas of the map are homemade; the rest has been reworked from 
+"boothill.wad")
+
+NOTE:  the exits in the original 'Boothill' levels were designed to be a two-man operation.  
+(One guy hits a switch and the other guy waits by the 'outhouse')  
+If you run REAL fast though, you should be able to make it on your own...
+
+Map11 & 12:   "Startrek.wad"
+These two levels are basically two completely redesigned versions of the map from
+"startrek.wad" by K.Shellington & D.Noel.
+One has been made to resemble the Enterprise-D, the other is the "Original Series" ship; 
+both have been embelished in their own way, and each made to be as different from the other 
+as possible.  Enjoy.
+
+Map13:   "Yesterday's Enterprise"
+Now that you're familiar with the layout of both the starships from the previous levels,
+you're ready for this larger map...
+
+In this level, The "Original Series" Enterprise is presented as a badly damaged starship, 
+docked next to the Enterprise-D in a similar scenario to the Next Generation episode 
+"Yesterday's Enterprise".  (Unlike Map06 of this wadfile, however, you are not limited to just 'Deco01' of each starship; the entire starship is represented on each side of the level)
+
+Cross over from the Enterprise to the Enterprise-D using either the transporter or the airlock,
+but don't forget your spacesuit...
+
+**note for Deathmatch games:   
+because these the starships are considered 'large' deathmatch arenas on their own ..  
+having two starships side-by-side like this can make it hard to locate your opponent.   
+So in order to make it a little more interesting, 
+the following feature has been added on this particular level:  
+
+Many of the main doors and switches on each ship have been linked by 'remote door' tags to their corresponding doors on the opposite ship. 
+ie: The two starships can be thought of as undergoing a 'computer-link' which has the effect of linking many of the 'Main' doors on each ship, to their counterparts on the opposite ship.
+((SO:  if you are standing in the transporter room on the Enterprise-D...
+and suddenly the doors and switches in the room around you start opening and closing all by themselves..  then you can be pretty certain that your opponent is located on the opposite starship, in the Transporter-room, and that he's opening doors and activating the switches...)) 
+ 
+
+MAP14-16:
+The programmers room(s)
+ie: the credits; and "thanks for playing..  have a nice day"
+
+Note(s): 
+--------
+
+-For NCC1701.wad, you must use the "NCCsetup" file included in the zip archive before you 
+ play the wad.  (see above) 
+         
+-Special thanks to John Thompson of 'Team Insanity' for the many ideas..
+
+-The bitmaps for the "borg" and "red-shirt" skins were designed by D&E DOOM Modifications Ltd.   (Devin E. Steinke & Evan M. Ross) 
+
+-If you like this wad then look for these other wads at your local FTP site:
+                 boothill.wad       by Tim Ash 
+                 startrek.wad      by K.Shellington and D.Noel
+                 ncc1701.wad for Zdoom     by Ryan Polczer and John Thompson 
+
+-If you have any questions or suggestions you can reach me at:  polczer@home.com
+
+-Authors MAY use this wad-file as a basis for new levels;
+ You may distribute the file in any format as long as you include this ".txt" file.      
+

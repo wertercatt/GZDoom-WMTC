@@ -1,2 +1,4 @@
 /home/wertercatt/Documents/Doom/WMTC/sources/u_alntc2/ALITCPUD.DEH
 
+/home/wertercatt/Documents/Doom/WMTC/sources/marine1/SUPER2.DEH
+

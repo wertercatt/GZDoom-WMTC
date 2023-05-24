@@ -1,0 +1,8 @@
+# DeuTex 5.2.2
+# PWAD creation directives
+
+# List of levels
+[levels]
+MAP01
+
+# End of extraction

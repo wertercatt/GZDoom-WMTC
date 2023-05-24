@@ -1,0 +1,184 @@
+// Zombie man (Moe) DONE!
+
+grunt/sight1			moe_see1	//ok
+grunt/sight2			moe_see3	//ok
+grunt/sight3			moe_see3	//ok
+grunt/active			dsposact	//ok
+grunt/pain			moe_pain	//ok
+grunt/death1			moe_die2	//ok
+grunt/death2			dspodth3	//ok
+grunt/death3			dspodth3	//ok
+grunt/attack			dspistol	//ok
+
+// Shotgun guy (Wiggum) DONE
+
+shotguy/sight1			dsposit1	//ok
+shotguy/sight2			wig_see1	//ok
+shotguy/sight3			wig_see1	//ok
+shotguy/active			dsposact	//ok
+shotguy/pain			wig_pain	//ok
+shotguy/death1			dspodth1	//ok
+shotguy/death2			wig_die1	//ok
+shotguy/death3			wig_die1	//ok
+shotguy/attack			dsshotgn	//ok
+
+// Archvile (Marge)
+
+vile/sight			dsvilsit	//ok
+vile/active			margenag	//ok
+vile/pain			dsvipain	//ok
+vile/death			dsvildth	//ok
+vile/raise			dsslop		//hmmm
+vile/start			dsvilatk	//ok
+vile/stop			dsbarexp	//ok
+vile/firestrt			dsflamst	//ok
+vile/firecrkl			dsflame		//ok
+
+// Revenant (Bart)
+
+skeleton/sight			dsskesit	//ok
+skeleton/active			dsskeact	//ok
+skeleton/pain			bartpain	//ok
+skeleton/melee			dsskepch	//ok
+skeleton/swing			dsskeswg	//ok
+skeleton/death			dsskedth	//ok
+skeleton/attack			dsskeatk	//hmmm
+skeleton/tracex			dsbarexp	//ok
+
+// Fatso (Willy)	DONE!!
+
+fatso/sight			dsmansit	//ok
+fatso/active			dsposact	//ok
+fatso/pain			dsmnpain	//ok
+fatso/raiseguns			dsmanatk	//ok
+fatso/death			dsmandth	//ok
+fatso/attack			dsfirsht	//ok
+fatso/shotx			dsfirxpl	//ok
+
+// Chainguy (Grandpa)	DONE!!
+
+chainguy/sight1			abe_see		//ok
+chainguy/sight2			dsposit2	//ok
+chainguy/sight3			dsposit3	//ok
+chainguy/active			dsposact	//ok
+chainguy/pain			abe_pain	//ok
+chainguy/death1			DSPODTH2	//ok
+chainguy/death2			abe_dth2	//ok
+chainguy/death3			abe_dth3	//ok
+chainguy/attack			dsshotgn	//ok
+
+// Imp (Flanders)	DONE!!
+
+imp/sight1			dsbgsit1	//ok
+imp/sight2			dsbgsit2	//ok
+imp/active			dsbgact		//ok
+imp/pain			ned_pain	//ok
+imp/melee			dsclaw		//ok
+imp/death1			dsbgdth1	//ok
+imp/death2			dsbgdth2	//ok
+imp/attack			dsfirsht	//ok
+imp/shotx			dsfirxpl	//ok
+
+// Demon (Barney) DONE!
+
+demon/sight			dssgtsit	//ok
+demon/active			brny_snd	//ok
+demon/pain			bny_pain	//ok
+demon/melee			dssgtatk	//ok
+demon/death			dssgtdth	//ok
+
+// Spectre (Barney) DONE!
+
+spectre/sight			dssgtsit	//ok
+spectre/active			brny_snd	//ok
+spectre/pain			bny_pain	//ok
+spectre/attack			dssgtatk	//ok
+spectre/death			dssgtdth	//ok
+
+// Cacodemon (Bumble Bee Guy)
+
+caco/sight			dscacsit	//ok
+caco/active			dsdmact		//ok
+caco/pain			bee_pain	//hmm
+caco/death			dscacdth	//ok
+caco/attack			dsfirsht	//ok
+caco/shotx			dsfirxpl	//ok
+
+// Baron of Hell (Sideshow Bob)
+
+baron/sight			dsbrssit	//ok
+baron/active			dsdmact		//ok
+baron/pain			bob_pain	//hmm
+baron/melee			dsclaw		//ok
+baron/death			dsbrsdth	//ok
+baron/attack			dsfirsht	//ok
+baron/shotx			dsfirxpl	//ok
+
+// Hell Knight (Apu)
+
+knight/sight			dskntsit	//ok
+knight/active			dsdmact		//ok
+knight/pain			apu_pain	//ok
+knight/death			dskntdth	//hmmm
+
+// Lost Soul (Krusty head)
+
+skull/active			dsdmact		//ok
+skull/pain			dsdmpain	//ok
+skull/melee			dssklatk	//ok
+skull/death			dsfirxpl	//ok
+
+// Spider Mastermind (Smithers)
+
+spider/sight			dsspisit	//ok
+spider/active			dsdmact		//ok
+spider/pain			smithurt	//hmmm
+spider/attack			dsshotgn	//ok
+spider/death			dsspidth	//ok
+spider/walk			dsmetal		//ok
+
+// Arachnotron (Maggie)
+
+baby/sight			dsbspsit	//ok
+baby/active			dsbspact	//ok
+baby/pain			dsbspact	//hmm
+baby/death			dsbspdth	//ok
+baby/walk			dsbspwlk	//ok
+baby/attack			dsplasma	//ok
+baby/shotx			dsfirxpl	//ok
+
+// Cyber Demon (Mr. Burns)
+
+cyber/sight			dscybsit	//ok
+cyber/active			dsdmact		//ok
+cyber/pain			burnpain	//ok
+cyber/death			dscybdth	//ok
+cyber/hoof			dshoof		//ok
+
+// Pain Elemental (TV)
+
+pain/sight			dspesit		//ok
+pain/active			dsdmact		//ok
+pain/pain			dspepain	//ok
+pain/death			dspedth		//ok
+
+// Wolfenstein SS (Evil Homerbot)
+
+wolfss/sight			dssssit		//ok
+wolfss/active			DSNOWAY		//ok
+wolfss/pain			dsplpain	//ok
+wolfss/death			dsssdth		//ok
+
+// Commander Keen
+
+keen/pain			dskeenpn	//ok
+keen/death			dskeendt	//ok
+
+// Boss Brain (Nelson)
+
+brain/sight			dsbossit	//ok
+brain/pain			dsbospn		//ok
+brain/death			dsbosdth	//ok
+brain/spit			dsbospit	//ok
+brain/cube			dsboscub	//ok
+brain/spawn			dsfirxpl	//ok

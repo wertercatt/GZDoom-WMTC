@@ -1,0 +1,9 @@
+# DeuTex 5.2.2
+# PWAD creation directives
+
+# List of data Lumps
+[lumps]
+DECORATE
+SNDINFO
+
+# End of extraction

@@ -1,0 +1,1 @@
+deusf -app simpdoom.wad
