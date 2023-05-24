@@ -1,0 +1,162 @@
+/* U.S. English. (Sorry, it's not English English.) */
+
+[enu default]
+
+QUITMSG = "are you sure you want to\nquit this great game?";
+
+MSGOFF = "Messages OFF";
+MSGON = "Messages ON";
+NETEND = "you can't end a netgame!\n\npress a key.";
+ENDGAME = "are you sure you want to end the game?\n\npress y or n.";
+DOSY = "(press y to quit)";
+EMPTYSTRING = "empty slot";
+
+GOTBLUEFLEM = "Picked up a blue flemkey.";
+GOTYELLOWFLEM = "Picked up a yellow flemkey.";
+GOTREDFLEM = "Picked up a red flemkey.";
+GOTGOGGLES = "Found Ultra Goggles";
+
+PD_BLUEO = "You need a blue key to activate this object";
+PD_REDO = "You need a red key to activate this object";
+PD_YELLOWO = "You need a yellow key to activate this object";
+PD_BLUEK = "You need a blue key to open this door";
+PD_REDK = "You need a red key to open this door";
+PD_YELLOWK = "You need a yellow key to open this door";
+PD_BLUECO = "You need a blue key to activate this object";
+PD_REDCO = "You need a red key to activate this object";
+PD_YELLOWCO = "You need a yellow key to activate this object";
+PD_BLUEFO = "You need a blue flemkey to activate this object";
+PD_REDFO = "You need a red flemkey to activate this object";
+PD_YELLOWFO = "You need a yellow flemkey to activate this object";
+PICKUP_PISTOL_DROPPED = "Picked up a zorcher.";
+
+STSTR_MUS = "Music Change";
+STSTR_NOMUS = "IMPOSSIBLE SELECTION";
+STSTR_DQDON = "Invincible mode on";
+STSTR_DQDOFF = "Invincible mode OFF";
+STSTR_KFAADDED = "Zorch and keys added";
+STSTR_FAADDED = "Zorch Added";
+STSTR_NCON = "No Clipping Mode ON";
+STSTR_NCOFF = "No Clipping Mode OFF";
+STSTR_BEHOLD = "inVuln, Str, Inviso, Rad, Allmap, or Lite-amp";
+STSTR_BEHOLDX = "Power-up Toggled";
+STSTR_CHOPPERS = "Eat Chex(R)!";
+STSTR_CLEV = "Changing Level...\n";
+
+HUSTR_E1M1 = "E1M1: Landing Zone";
+HUSTR_E1M2 = "E1M2: Storage Facility";
+HUSTR_E1M3 = "E1M3: Laboratory";
+HUSTR_E1M4 = "E1M4: Arboretum";
+HUSTR_E1M5 = "E1M5: Caverns of Bazoik";
+HUSTR_E2M1 = "E2M1: Spaceport";
+HUSTR_E2M2 = "E2M2: Cinema";
+HUSTR_E2M3 = "E2M3: Chex Museum";
+HUSTR_E2M4 = "E2M4: City Streets";
+HUSTR_E2M5 = "E2M5: Sewer System";
+HUSTR_E3M1 = "E3M1: Central Command";
+HUSTR_E3M2 = "E3M2: United Cereals";
+HUSTR_E3M3 = "E3M3: Villa Chex";
+HUSTR_E3M4 = "E3M4: Provincial Park";
+HUSTR_E3M5 = "E3M5: Meteor Spaceship";
+
+E1TEXT =
+	"After sending the monstrous Flembrane\n"
+	"back to his own dimension, you free the\n"
+	"captives. Yet flemoids are everywhere!\n"
+	"You and the captives make a break for\n"
+	"your spaceship. The flemoids slime your\n"
+	"ship, but you narrowly escape into orbit.\n"
+	"During the return you are congratulated\n"
+	"for the daring rescue, but you issue a\n"
+	"warning...\n"
+	"We haven't seen the last of the Flemoids.\n"
+	"\n"
+	"Unfortunately you are correct. For as you\n"
+	"return home, you find that the Flemoids\n"
+	"have somehow followed you here. Prepare\n"
+	"for Chex Quest 2: Terror in Chex City!\n";
+E2TEXT =
+	"You zorch the remaining flemoids who had\n"
+	"gathered in the sewers. Chex City has been\n"
+	"saved. It seems that the Flemoid threat\n"
+	"has finally ended.\n"
+	"\n"
+	"\n"
+	"Ten years pass in peace and prosperity.\n"
+	"But the Flemoids were not defeated and\n"
+	"their desire to control the nutritionally \n"
+	"rich cereal dimension has not diminished.\n"
+	"They have gathered all their forces, opened\n"
+	"a gigantic inter-dimensional rift in space\n"
+	"and now a great ball of slime is headed\n"
+	"straight for the cereals' planet!\n"
+	"\n"
+	"Get ready for\n"
+	"Chex Quest 3: Invasion!";
+E3TEXT =
+	"With one final blast, you zorch Lord\n"
+	"Snotfolus back to his own dimension!\n"
+	"Against all the odds you have single-\n"
+	"handedly foiled the invasion!\n"
+	"\n"
+	"You truly hope that the Flemoids have\n"
+	"finally learned their lesson and will\n"
+	"never again return to the cereal\n"
+	"dimension.\n"
+	"\n"
+	"\n"
+	"\n"
+	"But if they do you know you will be\n"
+	"ready for them!\n"
+	"\n"
+	"\n"
+	"";
+
+// Cast list (must appear in this order)
+CC_ZOMBIE = "Commonus";
+CC_SHOTGUN = "Bipedicus";
+CC_IMP = "Bipedicus with Armor";
+CC_DEMON = "Stridicus";
+CC_LOST = "Flem Mine";
+CC_CACO = "Super Cycloptis";
+CC_BARON = "Maximus";
+CC_SPIDER = "The Flembomination";
+CC_CYBER = "Lord Snotfolus";
+CC_HERO = "Chex Warrior";
+
+// New strings from BOOM
+PD_BLUEC = "You need a blue key to open this door";
+PD_REDC = "You need a red key to open this door";
+PD_YELLOWC = "You need a yellow key to open this door";
+PD_BLUEF = "You need a blue flemkey to open this door";
+PD_REDF = "You need a red flemkey to open this door";
+PD_YELLOWF = "You need a yellow flemkey to open this door";
+
+
+// Obituary strings
+// First the self-kills, then the other-kills
+OB_SUICIDE = "%o zorched himself.";
+OB_FALLING = "%o fell too far.";
+OB_CRUSH = "%o was squished.";
+OB_EXIT = "%o tried to leave.";
+OB_WATER = "%o can't swim.";
+OB_SLIME = "%o sinks into some slime.";
+OB_LAVA = "%o sinks into some slime.";
+OB_POWERSTRAND = "%o was hit by inter-dimensional slime!";
+OB_SPLASH = "%o stood in the wrong spot.";
+OB_R_SPLASH = "%o should have stood back.";
+OB_ROCKET = "%o should have stood back.";
+OB_KILLEDSELF = "%o was hit by inter-dimensional slime!";
+
+OB_STRIDICUS = "%o was boogered by a stridicus.";
+OB_FLEMMINE = "%o was gooed by a flem mine.";
+OB_SUPERCYCLOPTIS = "%o was slimed by a super cycloptis.";
+OB_MAXIMUS = "%o was defeated by a Maximus.";
+OB_LARVA = "%o was gooed by a larva.";
+OB_QUADRUMPUS = "%o was slimed by a Quadrumpus.";
+OB_FLEMBOMINATION = "%o was defeated by the Flembomination.";
+OB_SNOTFOLUS = "%o was defeated by Lord Snotfolus.";
+
+
+OB_MPR_SPLASH = "%o was hit by %k's propulsor.";
+OB_MPBFG_SPLASH = "%o was lazzed by %k.";

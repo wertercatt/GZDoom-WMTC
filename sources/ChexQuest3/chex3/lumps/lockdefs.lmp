@@ -1,0 +1,101 @@
+ClearLocks
+
+Lock 1
+{
+	ChexRedCard
+	Message "$PD_REDC"
+	RemoteMessage "$PD_REDCO"
+	Mapcolor 255 0 0
+}
+
+
+Lock 2
+{
+	ChexBlueCard
+	Message "$PD_BLUEC"
+	RemoteMessage "$PD_BLUECO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 3
+{
+	ChexYellowCard
+	Message "$PD_YELLOWC"
+	RemoteMessage "$PD_YELLOWCO"
+	Mapcolor 255 255 0
+}
+
+Lock 4
+{
+	RedFlemKey
+	Message "$PD_REDF"
+	RemoteMessage "$PD_REDFO"
+	Mapcolor 255 0 0
+}
+
+
+Lock 5
+{
+	BlueFlemKey
+	Message "$PD_BLUEF"
+	RemoteMessage "$PD_BLUEFO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 6
+{
+	YellowFlemKey
+	Message "$PD_YELLOWF"
+	RemoteMessage "$PD_YELLOWFO"
+	Mapcolor 255 255 0
+}
+
+Lock 129
+{
+	Any { ChexRedCard RedFlemKey}
+	Message "$PD_REDK"
+	RemoteMessage "$PD_REDO"
+	Mapcolor 255 0 0
+}
+
+
+Lock 130
+{
+	Any { ChexBlueCard BlueFlemKey}
+	Message "$PD_BLUEK"
+	RemoteMessage "$PD_BLUEO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 131
+{
+	Any { ChexYellowCard YellowFlemKey}
+	Message "$PD_YELLOWK"
+	RemoteMessage "$PD_YELLOWO"
+	Mapcolor 255 255 0
+}
+
+Lock 229
+{
+	Any { ChexBlueCard BlueFlemKey}
+	Any { ChexYellowCard YellowFlemKey}
+	Any { ChexRedCard RedFlemKey}
+	Message "$PD_ALL3"
+	RemoteMessage "$PD_ALL3O"
+}
+
+Lock 101
+{
+	ChexBlueCard 
+	BlueFlemKey
+	ChexYellowCard 
+	YellowFlemKey
+	ChexRedCard 
+	RedFlemKey
+	Message "$PD_ALL6"
+	RemoteMessage "$PD_ALL6O"
+}
+

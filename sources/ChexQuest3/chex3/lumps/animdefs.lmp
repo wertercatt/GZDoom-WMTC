@@ -1,0 +1,42 @@
+// CQ3 Animated Sky
+texture CJSKY3A
+pic CJSKY3A tics 3
+pic CJSKY3B tics 3
+pic CJSKY3C tics 3
+pic CJSKY3D tics 3
+pic CJSKY3E tics 3
+pic CJSKY3F tics 3
+pic CJSKY3G tics 3
+pic CJSKY3H tics 3
+
+// Animated Movies
+texture MOVIE1A
+pic MOVIE1A tics 6
+pic MOVIE1B tics 6
+pic MOVIE1C tics 6
+pic MOVIE1D tics 6
+
+texture MOVIE2A
+pic MOVIE2A tics 6
+pic MOVIE2B tics 6
+pic MOVIE2C tics 6
+pic MOVIE2D tics 6
+
+texture MOVIE3A
+pic MOVIE3A tics 6
+pic MOVIE3B tics 6
+pic MOVIE3C tics 6
+
+// Animated Subway Walls
+texture TRAINA1
+pic TRAINA1 tics 4
+pic TRAINA2 tics 4
+pic TRAINA3 tics 4
+pic TRAINA4 tics 4
+
+texture TRAINB1
+pic TRAINB1 tics 4
+pic TRAINB2 tics 4
+pic TRAINB3 tics 4
+pic TRAINB4 tics 4
+

@@ -1,0 +1,245 @@
+// MAPINFO for Doom 1 (Shareware, Registered, and Retail)
+
+// Registered/Retail Episode 1
+
+clearepisodes
+
+episode E1M1
+picname M_EPI1
+
+episode E2M1
+picname M_EPI2
+
+episode E3M1
+picname M_EPI3
+
+map E1M1 lookup HUSTR_E1M1
+levelnum 1
+titlepatch WILV00
+next E1M2
+secretnext E1M9
+sky1 SKY1 0
+cluster 1
+par 110
+noinfighting
+sucktime 1
+music D_E1M1
+
+map E1M2 lookup HUSTR_E1M2
+levelnum 2
+titlepatch WILV01
+next E1M3
+secretnext E1M9
+sky1 SKY1 0
+cluster 1
+par 180
+noinfighting
+sucktime 1
+music D_E1M2
+
+map E1M3 lookup HUSTR_E1M3
+levelnum 3
+titlepatch WILV02
+next E1M4
+secretnext E1M9
+sky1 SKY1 0
+cluster 1
+par 200
+noinfighting
+sucktime 1
+music D_E1M3
+
+map E1M4 lookup HUSTR_E1M4
+levelnum 4
+titlepatch WILV03
+next E1M5
+secretnext E1M9
+sky1 SKY1 0
+cluster 1
+par 240
+noinfighting
+sucktime 1
+music D_E1M4
+
+map E1M5 lookup HUSTR_E1M5
+levelnum 5
+titlepatch WILV04
+//next E1M6
+next EndGame1
+secretnext E1M9
+sky1 SKY1 0
+cluster 1
+par 300
+//moving end sequence
+nointermission
+nosoundclipping
+noinfighting
+//baronspecial
+specialaction_lowerfloor
+//moving end sequence
+sucktime 1
+music D_E1M5
+
+
+// Registered/Retail Episode 2
+
+map E2M1 lookup HUSTR_E2M1
+levelnum 11
+titlepatch WILV10
+next E2M2
+secretnext E2M9
+sky1 SKY2 0
+cluster 2
+par 240
+noinfighting
+sucktime 1
+music D_E2M1
+
+map E2M2 lookup HUSTR_E2M2
+levelnum 12
+titlepatch WILV11
+next E2M3
+secretnext E2M9
+sky1 SKY2 0
+cluster 2
+par 200
+noinfighting
+sucktime 1
+music D_E2M2
+
+map E2M3 lookup HUSTR_E2M3
+levelnum 13
+titlepatch WILV12
+next E2M4
+secretnext E2M9
+sky1 SKY2 0
+cluster 2
+par 240
+noinfighting
+sucktime 1
+music D_E2M3
+
+map E2M4 lookup HUSTR_E2M4
+levelnum 14
+titlepatch WILV13
+next E2M5
+secretnext E2M9
+sky1 SKY2 0
+cluster 2
+par 360
+noinfighting
+sucktime 1
+music D_E2M4
+
+map E2M5 lookup HUSTR_E2M5
+levelnum 15
+titlepatch WILV14
+//next E2M6
+next EndGame2
+secretnext E2M9
+sky1 SKY2 0
+cluster 2
+par 340
+// moving end sequence
+nointermission
+nosoundclipping
+noinfighting
+//cyberdemonspecial
+specialaction_exitlevel
+// moving end sequence
+sucktime 1
+music D_E2M5
+
+
+
+// Registered/Retail Episode 3
+
+map E3M1 lookup HUSTR_E3M1
+levelnum 21
+titlepatch WILV20
+next E3M2
+secretnext E3M9
+sky1 SKY3 0
+cluster 3
+par 240
+noinfighting
+sucktime 1
+music D_E3M1
+
+map E3M2 lookup HUSTR_E3M2
+levelnum 22
+titlepatch WILV21
+next E3M3
+secretnext E3M9
+sky1 CJSKY3A 0
+cluster 3
+par 300
+noinfighting
+sucktime 1
+music D_E3M2
+
+map E3M3 lookup HUSTR_E3M3
+levelnum 23
+titlepatch WILV22
+next E3M4
+secretnext E3M9
+sky1 CJSKY3A 0
+cluster 3
+par 360
+noinfighting
+sucktime 1
+music D_E3M3
+
+map E3M4 lookup HUSTR_E3M4
+levelnum 24
+titlepatch WILV23
+next E3M5
+secretnext E3M9
+sky1 CJSKY3A 0
+cluster 3
+par 360
+noinfighting
+sucktime 1
+music D_E3M4
+
+map E3M5 lookup HUSTR_E3M5
+levelnum 25
+titlepatch WILV24
+//next E3M6
+next endbunny
+secretnext E3M9
+sky1 SKY3 0
+cluster 3
+par 420
+// moving end sequence
+nointermission
+nosoundclipping
+noinfighting
+//spidermastermindspecial
+specialaction_exitlevel
+// moving end sequence
+sucktime 1
+music D_E3M5
+
+
+
+
+// Clusters (correspond with same-numbered episode)
+
+clusterdef 1
+flat ENDFLAT1
+music D_VICTOR
+exittext lookup E1TEXT
+
+clusterdef 2
+flat ENDFLAT2
+music D_VICTOR
+exittext lookup E2TEXT
+
+clusterdef 3
+flat ENDFLAT3
+music D_VICTOR
+exittext lookup E3TEXT
+
+
+

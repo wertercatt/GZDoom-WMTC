@@ -1,0 +1,837 @@
+;Format of textures:
+;TextureName	Width	Height
+;*	PatchName	Xoffset	Yoffset
+AASTINKY    		128	128
+*	WALL00_3    	0	0
+BIGDOOR1    		128	128
+*	DOOR2_1     	0	0
+BIGDOOR2    		128	128
+*	DOOR2_4     	0	0
+BIGDOOR4    		128	128
+*	DOOR9_1     	0	0
+BRNBIGC     		128	40
+*	W113_1      	0	0
+BRNBIGL     		128	128
+*	WALL54_1    	0	0
+*	W113_2      	26	34
+BRNBIGR     		128	128
+*	WALL54_1    	0	0
+*	W113_3      	26	34
+BRNPOIS     		64	128
+*	SW12_4      	32	0
+*	SW12_5      	0	0
+*	PS20A0      	1	60
+BRNPOIS2    		128	128
+*	WALL52_1    	0	0
+*	PS20A0      	32	76
+BRNSMAL1    		64	128
+*	W111_2      	0	0
+BRNSMAL2    		128	128
+*	WALL54_1    	0	0
+*	W111_3      	26	34
+BRNSMALC    		128	64
+*	W112_1      	0	0
+BRNSMALL    		128	128
+*	MWALL1_1    	0	0
+*	W112_2      	35	39
+*	W112_2      	64	39
+*	W112_2      	6	39
+*	W112_2      	93	39
+BRNSMALR    		128	128
+*	MWALL1_1    	0	0
+*	W112_3      	34	40
+BROWN1      		128	128
+*	SW12_4      	0	0
+*	SW12_4      	32	0
+*	SW12_4      	64	0
+*	SW12_5      	96	0
+BROWN144    		64	128
+*	RP1_2       	0	0
+BROWN96     		128	128
+*	WALL62_1    	0	0
+BROWNGRN    		64	128
+*	SW12_4      	0	0
+*	SW12_4      	32	0
+BROWNHUG    		128	256
+*	MWALL4_1    	0	128
+*	DOOR12_1    	0	0
+BROWNPIP    		64	128
+*	W15_4       	0	0
+COMP2       		256	128
+*	COMP02_1    	0	0
+*	COMP02_2    	64	0
+*	COMP02_4    	128	0
+*	COMP02_3    	192	0
+*	COMP02_6    	0	64
+*	COMP02_8    	64	64
+*	COMP02_7    	128	64
+*	COMP02_5    	192	64
+*	STEP08      	0	56
+*	STEP08      	32	56
+*	STEP08      	64	56
+*	STEP08      	96	56
+*	STEP08      	128	56
+*	STEP08      	160	56
+*	STEP08      	192	56
+*	STEP08      	224	56
+*	STEP08      	0	120
+*	STEP08      	32	120
+*	STEP08      	64	120
+*	STEP08      	96	120
+*	STEP08      	128	120
+*	STEP08      	160	120
+*	STEP08      	192	120
+*	STEP08      	224	120
+COMPSPAN    		32	128
+*	COMP03_4    	0	0
+*	COMP03_4    	0	64
+COMPSTA1    		8	128
+*	AG128_2     	0	0
+COMPSTA2    		128	128
+*	SW12_1      	64	0
+*	SW12_1      	64	64
+*	SW12_1      	0	0
+*	SW12_1      	0	64
+COMPTALL    		256	128
+*	COMP04_5    	32	0
+*	COMP04_8    	96	0
+*	COMP03_8    	160	0
+*	COMP04_6    	0	64
+*	COMP04_7    	64	64
+*	COMP04_2    	128	64
+*	COMP03_5    	192	0
+*	COMP04_1    	192	64
+*	COMP03_8    	0	0
+COMPTILE    		128	128
+*	COMP03_1    	0	0
+COMPUTE1    		64	128
+*	COMP1C_6    	0	0
+COMPUTE2    		256	56
+*	COMP02_1    	0	0
+*	COMP02_2    	64	0
+*	COMP02_3    	128	0
+*	COMP02_7    	192	0
+COMPUTE3    		128	128
+*	SW11_1      	0	0
+DOOR1       		128	128
+*	WALL03_1    	0	0
+DOOR3       		128	128
+*	DOOR2_5     	0	0
+DOORBLU     		8	128
+*	W46_37      	0	112
+*	W46_37      	0	0
+*	W46_37      	0	96
+*	W46_37      	0	80
+*	W46_37      	0	16
+*	W46_37      	0	32
+*	W46_37      	0	48
+*	W46_37      	0	64
+DOORRED     		8	128
+*	W46_38      	0	0
+*	W46_38      	0	16
+*	W46_38      	0	32
+*	W46_38      	0	48
+*	W46_38      	0	64
+*	W46_38      	0	80
+*	W46_38      	0	96
+*	W46_38      	0	112
+DOORSTOP    		32	118
+*	CJVILL08    	-32	0
+DOORTRAK    		128	128
+*	DOORTRAK    	0	0
+DOORYEL     		8	128
+*	W46_39      	0	112
+*	W46_39      	0	80
+*	W46_39      	0	64
+*	W46_39      	0	0
+*	W46_39      	0	16
+*	W46_39      	0	48
+*	W46_39      	0	32
+*	W46_39      	0	96
+EXITDOOR    		128	128
+*	DOOR3_6     	0	0
+EXITSIGN    		64	128
+*	RP1_1       	0	0
+GRAY4       		128	128
+*	CJCOMM02    	0	0
+*	WALL23_2    	6	40
+GRAY5       		64	256
+*	WALL00_6    	0	0
+GRAY7       		256	128
+*	W32_4       	0	0
+*	W32_1       	64	0
+*	W32_4       	128	0
+*	W33_8       	0	120
+*	W33_8       	64	120
+*	W33_8       	128	120
+*	W32_4       	192	0
+*	W33_8       	192	120
+*	W32_4       	64	56
+*	W32_1       	128	56
+*	W32_4       	192	56
+*	W32_4       	0	56
+GRAYTALL    		128	128
+*	WALL03_4    	0	0
+LITE2       		64	128
+*	SW12_4      	32	0
+*	SW12_5      	0	0
+*	FLAMP       	35	7
+*	FLAMP       	13	7
+LITE3       		32	64
+*	CJLITE01    	0	0
+LITE4       		64	128
+*	WALL00_2    	0	0
+LITE5       		384	111
+*	SW19_1      	0	0
+*	SW19_2      	192	0
+LITEBLU1    		128	128
+*	AGB128_1    	0	0
+*	CJSPLAT1    	40	5
+LITEBLU2    		64	128
+*	W13_A       	0	0
+LITEBLU3    		128	190
+*	WALL53_1    	0	62
+*	WALL59_4    	0	0
+LITEBLU4    		256	128
+*	WALL04_5    	0	0
+NUKE24      		128	128
+*	WALL04_7    	0	0
+NUKEDGE1    		128	128
+*	WALL04_3    	0	0
+*	NUKEDGE     	0	104
+NUKESLAD    		128	128
+*	WALL57_1    	0	0
+*	NUKEDGE     	0	105
+PIPE2       		128	256
+*	WALL00_8    	0	0
+PLANET1     		32	128
+*	TP3_1       	0	0
+PLAT1       		256	128
+*	WALL05_2    	0	0
+SHAWN2      		128	70
+*	WARNB0      	0	0
+SKY1        		512	240
+*	SKY1        	0	0
+SLADPOIS    		128	128
+*	WLA128_1    	0	0
+*	PS20A0      	39	46
+SLADRIP1    		64	128
+*	WALL57_2    	0	0
+SLADRIP2    		64	128
+*	WALL57_3    	0	0
+SLADRIP3    		64	128
+*	WALL57_4    	0	0
+SLADWALL    		128	128
+*	WLA128_1    	0	0
+STARG1      		64	128
+*	SW11_5      	0	0
+STARG3      		128	128
+*	SW19_3      	64	0
+*	SW19_4      	0	0
+STARGR1     		128	128
+*	LADDER16    	0	0
+STARTAN1    		64	128
+*	SW12_4      	0	0
+*	SW12_5      	32	0
+STARTAN2    		128	128
+*	DOOR9_2     	0	0
+STARTAN3    		384	111
+*	SW19_1      	0	0
+*	SW19_2      	192	0
+STEP1       		32	8
+*	STEP04      	0	0
+STEP2       		32	8
+*	STEP03      	0	0
+STEP3       		128	84
+*	SW16_4      	0	-25
+STEP4       		128	56
+*	T14_3       	0	-44
+STEP5       		64	84
+*	SW16_6      	0	-25
+STEP6       		64	512
+*	HIRIZE      	0	384
+*	HIRIZE      	0	256
+*	HIRIZE      	0	128
+*	CTWALL1     	0	0
+STONE       		128	256
+*	WALL01_1    	0	0
+STONE2      		128	128
+*	WALL04_4    	0	0
+STONE3      		128	128
+*	SW15_6      	0	0
+STONPOIS    		64	256
+*	WALL50_1    	0	128
+*	WALL47_1    	0	0
+SUPPORT2    		64	256
+*	WALL47_1    	0	0
+*	WALL51_1    	0	128
+SW1BRCOM    		64	128
+*	RP1_2       	0	0
+*	SW1S1       	7	78
+SW1BRN1     		64	128
+*	CJCOMM08    	0	0
+*	SW3S1       	6	75
+SW1BRN2     		64	128
+*	SW12_4      	0	0
+*	SW12_4      	32	0
+*	SW3S1       	7	76
+SW1BRNGN    		64	128
+*	CJLODG03    	-29	0
+*	SW2S1       	7	76
+SW1BROWN    		128	128
+*	SEWER1      	0	0
+*	SW3S1       	38	72
+SW1COMM     		64	72
+*	SW12_1      	0	0
+*	W33_8       	0	64
+*	SW1S1       	7	18
+SW1COMP     		64	128
+*	COMP03_4    	0	64
+*	COMP04_5    	0	0
+*	COMP03_4    	32	64
+*	SW2S1       	7	76
+SW1DIRT     		128	128
+*	CJSHIP01    	0	0
+*	CJSW1_2     	42	65
+SW1EXIT     		128	128
+*	CJCOMM23    	0	0
+*	SW2_1       	42	65
+SW1GRAY     		128	128
+*	SKYBIG3     	0	0
+*	SW2_1       	43	80
+SW1GRAY1    		128	128
+*	CJCELR01    	0	0
+*	SW2_1       	48	80
+SW1METAL    		64	128
+*	SW19_3      	-32	0
+*	SW19_4      	32	0
+*	SW2_1       	12	80
+SW1PIPE     		64	128
+*	DOOR3_5     	0	0
+*	SW2_1       	12	75
+SW1SLAD     		128	128
+*	WALL52_1    	0	0
+*	SW4S1       	40	10
+SW1STARG    		128	128
+*	SW19_3      	64	0
+*	SW19_4      	0	0
+*	SW3S1       	39	76
+SW1STON1    		64	128
+*	W28_8       	0	64
+*	W28_8       	0	0
+*	SW1S1       	7	78
+SW1STON2    		64	128
+*	SLIME_DR    	0	0
+*	SW1S1       	7	53
+SW1STONE    		64	128
+*	DOOR3_5     	0	0
+*	SW2_1       	12	75
+*	CJSPLAT1    	-15	96
+*	CJSPLAT2    	-5	-5
+SW1STRTN    		128	128
+*	MUWALL      	0	0
+*	SW1ARTWK    	13	10
+SW2BRCOM    		64	128
+*	RP1_2       	0	0
+*	SW1S0       	7	78
+SW2BRN1     		64	128
+*	CJCOMM08    	0	0
+*	SW3S0       	6	75
+SW2BRN2     		64	128
+*	SW12_4      	0	0
+*	SW12_4      	32	0
+*	SW3S0       	7	76
+SW2BRNGN    		64	128
+*	CJLODG03    	-29	0
+*	SW2S0       	7	76
+SW2BROWN    		128	128
+*	SEWER1      	0	0
+*	SW3S0       	38	72
+SW2COMM     		64	72
+*	SW12_1      	0	0
+*	W33_8       	0	64
+*	SW1S0       	7	18
+SW2COMP     		64	128
+*	COMP03_4    	0	64
+*	COMP04_5    	0	0
+*	COMP03_4    	32	64
+*	SW2S0       	7	76
+SW2DIRT     		128	128
+*	CJSHIP01    	0	0
+*	CJSW1_1     	42	65
+SW2EXIT     		128	128
+*	CJCOMM23    	0	0
+*	SW2_2       	42	65
+SW2GRAY     		128	128
+*	SKYBIG3     	0	0
+*	SW2_2       	43	80
+SW2GRAY1    		128	128
+*	CJCELR01    	0	0
+*	SW2_2       	48	80
+SW2METAL    		64	128
+*	SW19_3      	-32	0
+*	SW19_4      	32	0
+*	SW2_2       	12	80
+SW2PIPE     		64	128
+*	DOOR3_5     	0	0
+*	SW2_2       	12	75
+SW2SLAD     		128	128
+*	WALL52_1    	0	0
+*	SW4S0       	40	10
+SW2STARG    		128	128
+*	SW19_3      	64	0
+*	SW19_4      	0	0
+*	SW3S0       	39	76
+SW2STON1    		64	128
+*	W28_8       	0	64
+*	W28_8       	0	0
+*	SW1S0       	7	78
+SW2STON2    		64	128
+*	SLIME_DR    	0	0
+*	SW1S0       	7	53
+SW2STONE    		64	128
+*	DOOR3_5     	0	0
+*	SW2_2       	12	75
+*	CJSPLAT1    	-15	96
+*	CJSPLAT2    	-5	-5
+SW2STRTN    		128	128
+*	MUWALL      	0	0
+*	SW2ARTWK    	13	10
+TEKWALL1    		128	128
+*	W13_1       	0	0
+TEKWALL2    		64	128
+*	SW17_4      	0	0
+TEKWALL3    		128	70
+*	SW16_1      	0	0
+TEKWALL4    		128	128
+*	W94_1       	0	0
+TEKWALL5    		128	128
+*	SW12_4      	0	0
+*	SW12_4      	96	0
+*	SW12_5      	64	0
+*	SW12_5      	32	0
+REDWALL1    		64	128
+*	W15_4       	0	0
+CJBLUDR0    		128	128
+*	CJLODG10    	0	0
+*	CJBLUDR0    	19	26
+CJCELR01    		128	128
+*	CJCELR01    	0	0
+CJCLIF01    		128	256
+*	CJCLIF01    	0	0
+*	CJCLIF02    	0	128
+CJCLIF02    		128	128
+*	CJCLIF02    	0	0
+CJCOMM01    		128	128
+*	CJCOMM01    	0	0
+CJCOMM02    		128	128
+*	CJCOMM02    	0	0
+CJCOMM03    		128	128
+*	CJCOMM03    	0	0
+CJCOMM04    		64	128
+*	CJCOMM04    	0	0
+CJCOMM05    		128	128
+*	CJCOMM05    	0	0
+CJCOMM06    		128	128
+*	CJCOMM06    	0	0
+CJCOMM07    		128	128
+*	CJCOMM07    	0	0
+CJCOMM08    		64	128
+*	CJCOMM08    	0	0
+CJCOMM09    		128	128
+*	CJCOMM09    	0	0
+CJCOMM10    		128	128
+*	CJCOMM10    	0	0
+CJCOMM11    		128	256
+*	CJCOMM11    	0	128
+*	CJCOMM12    	0	0
+CJCOMM12    		128	128
+*	CJCOMM12    	0	0
+CJCOMM13    		256	128
+*	CJCOMM13    	0	0
+CJCOMM14    		256	128
+*	CJCOMM14    	0	0
+CJCOMM15    		128	128
+*	CJCOMM15    	0	0
+CJCOMM16    		128	320
+*	CJCOMM16    	0	192
+*	CJCOMM15    	0	0
+*	CJCOMM15    	0	70
+CJCOMM17    		128	128
+*	CJCOMM17    	0	0
+CJCOMM18    		64	128
+*	CJCOMM18    	0	0
+CJCOMM19    		256	128
+*	CJCOMM19    	0	0
+CJCOMM20    		128	128
+*	CJCOMM20    	0	0
+CJCOMM21    		128	128
+*	CJCOMM21    	0	0
+CJCOMM22    		128	128
+*	CJCOMM22    	0	0
+CJCOMM23    		128	128
+*	CJCOMM23    	0	0
+CJCRAT01    		128	256
+*	CJCRAT01    	0	128
+*	CJCRAT02    	0	0
+CJCRAT02    		128	256
+*	CJCRAT02    	0	0
+*	CJCRAT03    	0	128
+CJCRAT03    		128	256
+*	CJCRAT03    	0	0
+*	CJCRAT01    	0	128
+*	CJCRAT05    	0	224
+CJCRAT04    		64	128
+*	CJCRAT04    	0	0
+CJCRAT05    		128	256
+*	CJCRAT02    	0	0
+*	CJCRAT01    	0	128
+*	CJSPLAT1    	30	170
+CJDOOR01    		128	128
+*	CJDOOR01    	0	0
+CJDOOR02    		128	128
+*	CJDOOR01    	0	0
+*	CJDOOR02    	39	70
+CJDOOR03    		128	128
+*	CJDOOR03    	0	0
+CJDOOR04    		128	128
+*	CJDOOR01    	0	0
+*	CJDOOR04    	39	70
+CJFLDR01    		128	128
+*	CJFLDR01    	0	0
+CJFLDR02    		128	128
+*	CJFLDR02    	0	0
+CJFLDR03    		128	128
+*	CJFLDR03    	0	0
+CJFLDR04    		128	128
+*	CJFLDR04    	0	0
+CJFLDR05    		128	128
+*	CJFLDR05    	0	0
+CJLODG01    		128	128
+*	CJLODG01    	0	0
+CJLODG02    		32	128
+*	CJLODG02    	0	0
+CJLODG03    		128	128
+*	CJLODG03    	0	0
+CJLODG04    		128	128
+*	CJLODG04    	0	0
+CJLODG05    		128	128
+*	CJLODG05    	0	0
+CJLODG06    		128	128
+*	CJLODG03    	0	0
+*	CJLODG06    	14	30
+CJLODG07    		128	128
+*	CJLODG07    	0	0
+CJLODG08    		128	128
+*	CJLODG08    	0	0
+CJLODG09    		128	128
+*	CJLODG09    	0	0
+CJLODG10    		128	128
+*	CJLODG10    	0	0
+CJLODG11    		192	128
+*	CJLODG10    	0	0
+*	CJLODG10    	64	0
+*	CJLODG11    	64	0
+CJLODG12    		128	128
+*	CJLODG12    	0	0
+CJLODG13    		16	128
+*	CJLODG13    	0	0
+CJLODG14    		128	128
+*	CJLODG14    	0	0
+CJLODG15    		128	128
+*	CJLODG15    	0	0
+CJLODG16    		128	128
+*	CJLODG03    	0	0
+*	CJLODG16    	26	25
+CJLODG17    		128	128
+*	CJLODG17    	0	0
+CJMETE01    		128	128
+*	CJMETE01    	0	0
+CJMINE01    		128	128
+*	CJMINE01    	0	0
+CJMINE02    		128	128
+*	CJMINE02    	0	0
+CJREDDR0    		128	128
+*	CJLODG10    	0	0
+*	CJREDDR0    	19	26
+CJSHIP01    		128	128
+*	CJSHIP01    	0	0
+CJSHIP02    		128	128
+*	CJSHIP02    	0	0
+CJSHIP03    		128	128
+*	CJSHIP03    	0	0
+CJSHIP04    		128	128
+*	CJSHIP04    	0	0
+CJSHIP05    		128	128
+*	CJSHIP05    	0	0
+CJSPLAT1    		100	62
+*	CJSPLAT1    	0	0
+CJSW1_1     		128	70
+*	CJSW1_1     	0	0
+CJSW1_2     		128	128
+*	SW19_3      	0	0
+*	SW19_3      	64	0
+*	STORAGE     	32	85
+CJTRAI01    		128	128
+*	CJTRAI01    	0	0
+CJTRAI02    		128	128
+*	CJTRAI02    	0	0
+CJTRAI03    		128	128
+*	CJTRAI03    	0	0
+CJTRAI04    		128	128
+*	CJTRAI04    	0	0
+CJYELDR0    		128	128
+*	CJLODG10    	0	0
+*	CJYELDR0    	19	26
+CJVILL01    		128	256
+*	CJVILL01    	0	128
+*	CJVILL02    	0	0
+CJVILL02    		128	256
+*	CJVILL02    	0	0
+*	CJVILL01    	0	128
+*	CJSPLAT1    	12	175
+CJVILL03    		128	256
+*	CJVILL01    	0	128
+*	CJVILL02    	0	0
+*	CJVILL03    	31	48
+CJVILL04    		128	128
+*	CJVILL04    	0	0
+CJVILL05    		128	128
+*	CJVILL05    	0	0
+CJVILL06    		128	256
+*	CJVILL06    	0	128
+*	CJVILL07    	0	0
+CJVILL07    		128	256
+*	CJVILL07    	0	0
+*	CJVILL06    	0	128
+*	CJSPLAT2    	40	0
+CJVILL08    		128	128
+*	CJVILL08    	0	0
+CJVILL10    		128	256
+*	CJVILL10    	0	0
+*	CJVILL09    	0	128
+*	CJSPLAT2    	7	39
+CJVILL09    		128	256
+*	CJVILL09    	0	128
+*	CJVILL10    	0	0
+SEWER1      		128	128
+*	SEWER1      	0	0
+SEWER2      		128	128
+*	SEWER2      	0	0
+SEWER3      		256	128
+*	SEWER1      	0	0
+*	SEWER1      	128	0
+*	SEWER5      	27	24
+SEWER4      		128	128
+*	SEWER1      	0	0
+*	SEWER4      	0	50
+WORMHOL3    		64	128
+*	SEWER3      	0	0
+CITYWALL    		64	128
+*	CTWALL1     	0	0
+WINDOH      		64	128
+*	HIRIZE      	0	0
+WINDOH2     		128	128
+*	WINDOH2     	0	0
+WORMHOL1    		64	128
+*	WURMHOL1    	0	0
+WORMHOL2    		64	128
+*	WURMHOL2    	0	0
+CJSKY3B     		512	240
+*	CJSKY3B     	0	0
+CJSKY3C     		512	240
+*	CJSKY3C     	0	0
+CJSKY3D     		512	240
+*	CJSKY3D     	0	0
+CJSKY3A     		512	240
+*	CJSKY3A     	0	0
+CJSKY3E     		512	240
+*	CJSKY3E     	0	0
+CJSKY3F     		512	240
+*	CJSKY3F     	0	0
+CJSKY3G     		512	240
+*	CJSKY3G     	0	0
+CJSKY3H     		512	240
+*	CJSKY3H     	0	0
+CJVILL11    		128	64
+*	CJVILL11    	0	0
+CJCOMM24    		64	256
+*	CJCOMM24    	0	128
+*	CJCOMM12    	0	0
+STORAGE     		128	128
+*	SW12_4      	0	0
+*	SW12_4      	32	0
+*	SW12_4      	96	0
+*	SW12_4      	64	0
+*	STORAGE     	33	49
+HYDROPO1    		256	128
+*	HYDRO1      	0	0
+HYDROPO2    		256	128
+*	HYDRO2      	0	0
+HYDROPO3    		256	128
+*	HYDRO3      	0	0
+IFOCSEAL    		128	256
+*	WALL01_1    	0	0
+*	IFOCSEAL    	14	142
+CHEXAD1     		256	128
+*	AD1         	0	0
+CHEXAD2     		256	128
+*	AD2         	0	0
+POPCORN     		128	103
+*	POPCORN     	0	0
+POSTER1     		128	128
+*	WALL50_2    	0	0
+*	POSTER1     	0	8
+POSTER2     		128	128
+*	WALL50_2    	0	0
+*	POSTER2     	1	7
+POSTER3     		128	128
+*	WALL50_2    	0	0
+*	POSTER3     	0	-1
+THEATRE1    		128	128
+*	WALL50_2    	0	0
+*	THEATRE1    	32	40
+THEATRE2    		128	128
+*	WALL50_2    	0	0
+*	THEATRE2    	32	40
+THEATRE3    		128	128
+*	WALL50_2    	0	0
+*	THEATRE3    	32	40
+CANDY       		128	103
+*	CANDY       	0	0
+CINEMA      		128	128
+*	WALL50_2    	0	0
+*	CINEMA      	0	32
+DCAFE01     		128	128
+*	DCAFE001    	0	0
+DCAFE02     		128	128
+*	DCAFE002    	0	0
+DCAFE03     		128	128
+*	DCAFE003    	0	0
+DCAFE04     		128	128
+*	DCAFE004    	0	0
+DCAFE06     		128	128
+*	DCAFE006    	0	0
+DCAFE07     		128	128
+*	DCAFE007    	0	0
+DCAFE08     		128	128
+*	DCAFE008    	0	0
+DCAFE09     		128	128
+*	DCAFE009    	0	0
+DCAFE10     		128	128
+*	DCAFE010    	0	0
+HEDGE       		128	128
+*	HEDGE       	0	0
+ART1        		128	128
+*	MUWALL      	0	0
+*	ART1        	25	36
+ART2        		128	128
+*	MUWALL      	0	0
+*	ART2        	0	0
+MONA        		128	128
+*	MUWALL      	0	0
+*	MONA        	0	3
+MUNCH       		128	128
+*	MUWALL      	0	0
+*	MUNCH       	0	0
+MUSEUM2     		128	128
+*	NICEWALL    	0	0
+*	NICEWALL    	64	0
+*	MUPLAK      	0	50
+MUSEUM      		128	128
+*	MUWALL      	0	0
+NICEWALL    		64	128
+*	NICEWALL    	0	0
+VENUSHS     		256	128
+*	MUWALL      	0	0
+*	MUWALL      	128	0
+*	VENUSHS     	0	0
+VINCENT     		128	128
+*	MUWALL      	0	0
+*	VINCENT     	0	1
+PLUSH       		64	128
+*	PLUSH       	0	0
+*	PLUSH       	0	64
+THEAWALL    		128	128
+*	THEAWALL    	0	0
+CRUDWALL    		128	128
+*	CRUDWALL    	0	0
+MOVIE3C     		384	128
+*	MOVIE3C     	0	0
+MOVIE1A     		384	128
+*	MOVIE1A     	0	0
+MOVIE1B     		384	128
+*	MOVIE1B     	0	0
+MOVIE1C     		384	128
+*	MOVIE1C     	0	0
+MOVIE1D     		384	128
+*	MOVIE1D     	0	0
+MOVIE2A     		384	128
+*	MOVIE2A     	0	0
+MOVIE2B     		384	128
+*	MOVIE2B     	0	0
+MOVIE2C     		384	128
+*	MOVIE2C     	0	0
+MOVIE2D     		384	128
+*	MOVIE2D     	0	0
+MOVIE3A     		384	128
+*	MOVIE3A     	0	0
+MOVIE3B     		384	128
+*	MOVIE3B     	0	0
+TRAINB4     		256	128
+*	TRAINB4     	0	0
+TRAINA1     		256	128
+*	TRAINA1     	0	0
+TRAINA2     		256	128
+*	TRAINA2     	0	0
+TRAINA3     		256	128
+*	TRAINA3     	0	0
+TRAINA4     		256	128
+*	TRAINA4     	0	0
+TRAINB1     		256	128
+*	TRAINB1     	0	0
+TRAINB2     		256	128
+*	TRAINB2     	0	0
+TRAINB3     		256	128
+*	TRAINB3     	0	0
+DOOR3_5     		64	128
+*	DOOR3_5     	0	0
+CJCITY01    		64	256
+*	CJCITY01    	0	0
+CJLOGO1     		128	128
+*	CJLOGO1     	0	0
+CJLOGO2     		128	128
+*	CJLOGO2     	0	0
+CJHYDRO1    		192	128
+*	CJHYDRO1    	0	0
+TI_GRATE    		64	64
+*	TI_GRATE    	0	0
+BLASTER     		128	64
+*	BLASTER     	0	0
+SEWER_A     		128	128
+*	SEWER_A     	0	0
+SEWER_B     		128	128
+*	SEWER_B     	0	0
+CARPET_A    		128	128
+*	CARPET_A    	0	0
+SLIME_DR    		64	128
+*	SLIME_DR    	0	0
+TILE_A      		128	128
+*	TILE_A      	0	0
+BAZOIK1     		256	256
+*	BAZOIK1     	0	0
+BAZOIK2     		64	128
+*	BAZOIK2     	0	0
+SPARTAN4    		384	113
+*	SW19_1      	0	0
+*	SW19_2      	192	0
+*	WALL70_9    	160	45
+SPARTAN5    		384	113
+*	SW19_1      	0	0
+*	SW19_2      	192	0
+*	WALL70_3    	160	45
+SPARTAN6    		384	113
+*	SW19_1      	0	0
+*	SW19_2      	192	0
+*	WALL70_4    	160	45
+;End
