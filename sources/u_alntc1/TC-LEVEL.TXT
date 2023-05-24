@@ -1,0 +1,326 @@
+Making a level for ALIENS-TC
+Basic Information, by Justin Fisher (author - ALIENS-TC)
+========================================================
+
+Bear in mind that making a level for ALIENS-TC will change the
+way you play TC, don't read further until you have completed
+ALIENS-TC, as the information below will probably lessen your
+enjoyment of it.
+
+Firstly, I recommend you look at my levels, see how I have
+done things etc, use them for reference and ideas to get
+started. Hopefully you will be able to use the ALIENS-TC
+conversion in ways I havn't thought of. (I know Richard did in
+the secret level). This text file contains the conversion
+information ie what part of ALIENS-TC corresponds to in DOOM,
+Wall textures, floor and ceiling textures, Things etc
+Another thing to bear in mind is putting new graphics, sounds
+etc in the PWAD (though not sprites or .EXE patches, as this
+will mean installation inconvenience), ie changing some of
+the quotes/dialogue to something more appropriate to the PWAD.
+Be prepared to do a bit of texture offsetting, perhaps even
+(shock! horror!) maths. (Trust me - once you got the hang of
+it, it's far easier to calculate the texture offsets than
+guess, or estimate.) Quite a few TC textures _require_ it
+(especially the stair rails/banister/whatever)
+
+IMPORTANT: You may not make ALIENS-TC WADs by modifying
+existing WADs. (This is to ensure that the levels are suitable
+for TC not a ten minute conversion resulting in a poor Aliens
+level).
+
+Here are the basic conversions:
+ALIENS-TC                          Wad editing equivalent
+---------------------------------------------------------
+LIST OF THINGS:
+
+SCENERY THINGS:   
+
+Hole in ceiling                    Skulls on skewer
+Twin pipes (104 high)              Skull on pole
+Complex pipes (104 high)           Dead Imp
+Ladder (192 high)                  Tall blue torch
+Landing lights                     Eye symbol
+Metal girder (104 high)            Tall green column
+Dripping Water (104 high)          Swaying body 2
+Big Rock 1                         Brown stump
+Big Rock 2                         Grey Tree
+Big Rock 3                         Candelabra
+Small spiky rock                   Candle
+Hanging light (Lit)                Tall red torch
+Hanging light (dead)               Tall green torch
+Face hugger in Jar                 Red column with skull
+Moving Face hugger in Jar          Column with beating heart
+Facehugger Egg, unhatched          Flaming skull rocks
+Facehugger Egg, hatched            Short green column
+Small flame on ground              Short red torch
+*Small flame on slime pile         Short green torch
+Large flames                       Short blue torch
+Slime column 1 (104 high)          Short red column
+Slime column 2 (104 high)          Tall red column
+Destroyable slime column           Large tree
+Slime lump on ground               Dead trooper
+Slime lump and ceiling lump        Dead Sergeant
+
+*Put on same spot as Destroyable Slime Column to make it
+appear the column catches on fire when destroyed.
+
+MONSTERS:
+
+Alien Warrior                       Demon
+Alien Drone (spits acid)            Imp
+*Alien Queen (on E3M8)              Spider demon
+**Alien Queen (on E2M8)             Cyberdemon 
+Alien Queen (spits acid)            Baron of Hell
+Face Hugger                         Lost soul
+Face hugger egg (hatches)           Cacodemon
+Warrior with explosive death        Spectre
+***Drone with small mass, big H.P.  Trooper
+****Silent warrior, explodes        Sergeant
+
+*If you want the Queen's death on E2M8 to end the game, use a Cyberdemon.
+**If you want the Queen's death on E3M8 to end the game, use a Spiderdemon.
+***Used in E2M4 to be blown down through holes in ceiling (note,
+they have very little mass, and take a lot more damage)
+****Used in E2M4 as propulsion for the troopers...
+
+SOUNDS/VOICES:
+
+Motion Tracker, sounding 3 times   Impaled body
+Motion Tracker, continuous (poor)  Pile of Skulls
+Siren / Alarm, (continuous)        Hanging Leg 2
+*Misc quotes (one of the next 3)   One legged body 2
+"Keep it moving" (Apone)           Dead Cacodemon
+"Keep it tight" (Apone)            Guts & Bones
+"Nice and easy..." (Apone)         Guts & Bones 2
+"Sir - you reading this? Looks
+     like hits from (etc)" (Apone) Swaying Body
+"This place is dead, whatever
+     happened here, I think (etc)" Hanging, Arms out
+"Check those corners, check those
+     corners!" (Apone)             One legged body
+"Remember - short, controlled
+     bursts." (Hicks)              Hanging Torso
+"Watch your fire and check your
+     targets, (etc)" (Apone)       Hanging leg
+"Lets finish our sweep. We're
+     still (etc)" (Apone)          Hanging, Arms out 2
+"Whatever you're gonna do, do
+     it fast!" (Vasquez)           Hanging torso 2
+
+*I _think_ this selects, at random, one of the following three
+quotes (keep it tight, keep it moving, nice and easy), but it
+almost invariably picks "keep it moving". Good all-purpose one
+anyway. (Also, the motion tracker on continuous doesn't sound
+very good)
+
+WEAPONS, MISC:
+
+Cargo bay loader                   Chainsaw + Blue armour
+Pulse rifle                        Chaingun + Rocket launcher
+Smart-gun                          Plasma gun
+Grenade                            Rocket
+
+NB, for the Loader, and pulse rifle, you put both objects on
+the exact same spot on the level (DEU is best for doing this),
+then they are picked up simultaneously when walked over.
+
+Med kits, ammo, etc (and a few appropriate scenery items) are
+unchanged.
+>From memory, the unchanged scenery items are the technical
+column (128 high) and the Floor lamp.
+
+LIST OF FLOOR/CEILING TEXTURES:
+
+Slime/hive floor                   Sflr6_4
+Smooth, large steel plate          Sflr7_1
+Roughened large steel plate        Sflr7_4
+Grate                              Ceil4_2
+Grate/duct in (striped) plate      Gate1
+Medlabs Floorplan                  Floor1_1
+Murky water (animated)             Fwater1, 2, 3 or 4
+Landing strip (animated)           Blood1, 2 or 3
+Landing strip 2 (animated)         Nukage1, 2 or 3
+
+NB "Landing strip" 2 runs horizontally (on the automap/level
+editor) while "Landing Strip" runs vertically.
+
+LIST OF WALL TEXTURES:
+Doom texture   Aliens replacement
+---------------------------------
+Bigdoor1       Metal door with company logo in black.
+Bigdoor3       Green door, altered to tile better horizontally
+               to form long doors.
+Bigdoor5       Vertical metal plates with industrial markings
+               (ie yellow and black stripes)
+Bigdoor6       Green Bigdoor but edged with gunge
+Blodgr1, 2 & 3 Murky water flowing down over brick.
+Fireblu1 & 2   Flashing panel for proximity indicators (lots)
+Firewall, b, c Animated control panel, looks nice.
+Gray5          As DOOM, but with industrial stripe
+Gray7          As DOOM, but with industrial stripe
+Midvine1       Dark horizontal piping. (a big more than 
+               necessary too) (R)
+Marble2        Corridor wall with pipes etc
+*Marble3       component variations for above texture
+               divided into 3 columns, each 64 wide:
+               L end, R end, variation
+Marbfac2       grey plate steel (R)
+Marbfac3       Barricades
+Pipe1          As Pipe2, but with "ARMOURY" sign.
+Pipe2          Pipe2, but dark brown instead of tan.
+Redwall        Safety railing (yellow & black fence)
+Shawn1         Company logo in colour.
+Skin2          Green flattish gunge (colour replacement)
+Skinedge       Like skin2, but with a little more detail
+Skinlow        Industrial wall texture, not very good.
+Skinface       Standard hive gunge texture
+*Skinmet1      Divided into several textures, you really have
+               to take a look, it includes a small door with
+               gunge, and hive transition textures.
+               4 columns, each 64 wide:
+               small gunged door, gray & hive R end, gray &
+               hive L end, and grey with hive detail.       
+*Skinmet2      Divided into 2 rows and 4 columns, of signs, 
+               the first two columns need backlighting, the
+               last two are just signs:
+               sublevel 37, sublevel 36, level 2, level 01
+               sublevel 02, sublevel 03, sublevel 02, sublevel 03
+               Each sign is 64x56
+Skintek1       Altered skin to STARTAN panels, can also be
+               used as a transition texture. 
+Skintek2       Same thing as done to skintek1
+Sp_dude1       Steel plate (like marbfac2) with supports (R)
+Sp_dude2       Red metal plate with numbers (for fuel tanks)
+Sp_dude3       Steel plate (like marbfac2) variation (R)
+*Sp_dude6      Safety rails for stairs
+*Skulwall      Small airduct grill (divided into four as
+               follows:    Normal      Busted
+                            grill      grill
+
+                           Normal      busted
+                           & gunge     & gunge
+
+               Each grill is 40x40, and the texture is offset
+               so you have to compensate (X+4 I think)
+*Skulwall3     Same as above, except grills are big enough to
+               fit through (48x64), offset x+12, oops.
+Skspine1       Same as in DOOM, but coloured to fit in hive.
+Skspine2       As above, but this spine is horizontal.
+Sladdrip1,2&3  Altered so that murky water running from     
+               grill in BROWN144 texture.
+Sp_rock1       Colonists in gunge 1
+Sp_rock2       Colonists in gunge 2
+Stone          Grey wall with industrial stripe
+*Wood1         Divided into two textures, the first 128x128 is
+               partially transparent hive wall, the second 
+               128x128 is solid black and yellow stripes.   
+Wood3          A strange sorta grey texture. (R)
+*Wood5         Metal wall with transparent mesh (used in
+               the lifts) make up the first 128x128, the rest
+               is hive transition pieces (marble2)
+
+* means the texture is made up of lots of textures too small
+to warrant a bitmap all to themselves, so you chose which
+section you want to use, and adjust the offset accordingly.
+
+(R) means the texture was by Richard Love, for the secret
+level (Alien host ship), his style is very different to mine,
+so I thought I'd stick this in there.
+
+Those are most of the Aliens textures, there are quite a lot
+which have been altered in some way but not mentioned here,
+these are the important ones anyway. Best idea is to view
+them.
+
+
+ADVICE:
+Most of this can be gleaned from looking at the ALIENS-TC
+levels, but here are some of the more effective ideas, and a
+few that I think were good, but didn't have time to use
+better.
+
+The best way of making Aliens come out of the walls, is to
+give them a niche in the wall where they can sit, out of
+sight. you usually want to cover the hole with a texture
+(should be partially transparent or it's not realistic and a
+bit unfair to the players), but making it slightly darker will
+also work (Demons (Aliens warriors (demons) do not move while
+waiting, hence are very hard to spot). 
+
+Another technique is having an adjacent room, connected by an
+impassable, transparent wall with an opaque texture. The
+aliens "see" you though the texture and come towards you,
+crossing a "teleport" linedef and appearing right where you
+want them to (usually behind and in front of the player,
+hehehe...).
+
+I try to make the levels consistent (even under IDSPISPOPD
+scrutiny) and in the above case, usually include a means by
+which the aliens could have gotten to the place they arrived
+at (usually just a ventilation duct. Another thing, to make
+ducts more realistic, don't put in dead ends, add a shaft
+going up - the player can't see where it goes, just that it
+doesn't end, but can no longer be followed.)
+
+Still on the subject of ducts, shafts are also a good way to
+make a one-way duct. Make a lot of ducts if you can, allowing
+another means of moving though the level. (I didn't use
+ventilation ducts half as much as I wanted - there are no real
+"networks" between rooms)
+
+Your most common room height should be 104, because a lot of
+scenery (ie dripping water, pipes) only fits properly in a
+room that height. You can also combine scenery, eg dripping
+water on the same place as a hole in the ceiling works quite
+well.
+
+Hives - All hive areas should be 104 high, because almost all
+the hive scenery is that height, and the result is awful when
+things like slime column don't reach the ceiling (or go
+through it). Use the slime columns against the walls to make 
+a corridor more organic, but be careful - the columns restrict
+movement and if the corridor is too narrow, they may prevent
+passage. Deliberately preventing passage with a destroyable
+slime column is a good way of either slowing the player down
+or soaking up excess ammo. Dripping water looks good in hive
+as well as anywhere else (and is also 104 high)
+
+The rails on stairs can take a bit of time, for a start, the
+each step must be 16 high and 32 deep. each step is assigned
+it own SP_DUDE6 texture to it's 2-sided linedef, one side of
+which must have an x-offset of 32 (to mirror the texture, view
+the texture to see what I mean), and each step will require a
+Y-offset of 16 _above_ the Y-offset of the step below it.
+(It's up to you to work out the offset of the bottom step)
+
+Above all, remember _not_ to fall into the "Rooms-connected-
+by-corridors" design trap, and build locations, interesting
+and original designs. (But don't sacrifice playability to do
+this of course) It's also worth mentioning to build your
+levels
+in a non-linear fashion ie you have choice where you go.
+DOOM E1M1 is a linear level
+DOOM E3M3 is a non linear level
+TC E2M2 is a linear level (except in d-match, with full keys)
+TC E2M6 is a non linear level.
+
+In terms of Deathmatch, non-linear is far, far, far better. So
+even if your level is fairly linear, you can add some doors
+that need keys (which are at the end of the level) so in
+deathmatch, it becomes non-linear (As you start with all the
+keys in D-match).
+
+For actual advise on WAD building, there is FAQ at: 
+ftp.cdrom.com:/pub/doom/wad_edit/text/design12.faq 
+It is a Level design FAQ.
+
+For problems, more info, etc
+My Internet address is:
+
+MISC335@cantva.canterbury.ac.nz
+
+Justin Fisher
+Author - ALIENS-TC
+
+
