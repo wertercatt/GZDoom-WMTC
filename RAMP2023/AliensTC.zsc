@@ -1141,41 +1141,20 @@ CLASS DH_NonsolidMeat5 : NonsolidMeat5 replaces NonsolidMeat5 62 {
 	}
 }
 
-CLASS DH_NonsolidTwitch : NonsolidTwitch replaces NonsolidTwitch 63 { 
+CLASS AliensTCDrippingWater : NonsolidTwitch { 
 	Default {
-		
+		Tag "Dripping Water (104 high)"
 		Height 104;
-		-SPAWNCEILING;
-		-NOGRAVITY;
+		+SPAWNCEILING;
+		+NOGRAVITY;
 	}
 	States
 	{
 		Spawn:
-			GOR1 ABC 5();
-			GOR2 A 5();
-			GOR3 A 5();
-			goto Spawn;
-	}
-}
-
-CLASS DH_DeadCacodemon : DeadCacodemon replaces DeadCacodemon 22 { 
-	Default {
-		
-		Health 1;
-		Speed 1;
-		Height 56;
-		PainChance 200;
-		+NOSECTOR;
-		SeeSound "grunt/sight";
-	}
-	States
-	{
-		Spawn:
-			TROO AB 10 A_Look();
-			goto Spawn;
-		See:
-			TROO AABBCCDD 3 A_Chase();
-			goto See;
+			ALDW ABC 5();
+			ALDW D 5();
+			ALDE E 5();
+			loop;
 	}
 }
 
