@@ -11,17 +11,17 @@ CLASS AliensTCLightweightDrone : ZombieMan {
 		AttackSound "";
 		DeathSound "imp/death";
 		ActiveSound "imp/active";
-                Obituary "%o was killed by an Alien Drone"
-                Tag "Alien Drone"
+		Obituary "%o was killed by an Alien Drone"
+		Tag "Alien Drone"
 	}
 	States
 	{
 		Spawn:
 			TROO AB 10 A_Look();
-			goto Spawn;
+			Loop;
 		See:
 			TROO AABBCCDD 3 A_Chase();
-			goto See;
+			Loop;
 		Pain:
 			TROO H 2();
 			TROO H 2 A_Pain();
