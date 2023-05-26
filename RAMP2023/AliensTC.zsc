@@ -1318,25 +1318,25 @@ CLASS DH_DeadStick : DeadStick replaces DeadStick 25 {
 	}
 }
 
-CLASS DH_BigTree : BigTree replaces BigTree 54 { 
+CLASS AliensTCDestroyableSlimeColumn : BigTree { 
 	Default {
-		
+		Tag "Destroyable slime column"
 		Health 150;
 		Radius 16;
 		Height 76;
-		Mass -99999999;
+		+DONTTHRUST;
 		+SHOOTABLE;
 		+NOBLOOD;
 	}
 	States
 	{
 		Death:
-			HEAD G 5();
-			HEAD H 5 A_Scream();
-			HEAD IJ 5();
-			HEAD K 5 A_Fall();
-			HEAD L 5();
-			GOR4 A -1();
+			ALSC A 5();
+			ALSC B 5 A_Scream();
+			ALSC CD 5();
+			ALSC E 5 A_Fall();
+			ALSC F 5();
+			ALSC G -1();
 			stop;
 	}
 }
