@@ -1179,9 +1179,9 @@ CLASS DH_DeadCacodemon : DeadCacodemon replaces DeadCacodemon 22 {
 	}
 }
 
-CLASS DH_DeadLostSoul : DeadLostSoul replaces DeadLostSoul 23 { 
+CLASS AliensTCComplexPipes : DeadDoomImp { 
 	Default {
-		
+		Tag "Complex pipes (104 high)"
 		Radius 32;
 		Height 104;
 		+SOLID;
@@ -1189,71 +1189,14 @@ CLASS DH_DeadLostSoul : DeadLostSoul replaces DeadLostSoul 23 {
 	States
 	{
 		Spawn:
-			CYBR O -1();
+			ALCP A -1();
 			stop;
 	}
 }
 
-CLASS DH_DeadDoomImp : DeadDoomImp replaces DeadDoomImp 20 { 
+CLASS AliensTCHoleInCeiling : HeadsOnAStick { 
 	Default {
-		
-		Radius 32;
-		Height 104;
-		+SOLID;
-	}
-	States
-	{
-		Spawn:
-			CYBR O -1();
-			stop;
-	}
-}
-
-CLASS DH_GibbedMarine : GibbedMarine replaces GibbedMarine 10 { 
-	Default {
-		
-		Health 1;
-		Speed 1;
-		Height 56;
-		PainChance 200;
-		+NOSECTOR;
-		SeeSound "grunt/sight";
-	}
-	States
-	{
-		Spawn:
-			TROO AB 10 A_Look();
-			goto Spawn;
-		See:
-			TROO AABBCCDD 3 A_Chase();
-			goto See;
-	}
-}
-
-CLASS DH_GibbedMarineExtra : GibbedMarineExtra replaces GibbedMarineExtra 12 { 
-	Default {
-		
-		Health 1;
-		Speed 1;
-		Height 56;
-		PainChance 200;
-		+NOSECTOR;
-		SeeSound "grunt/sight";
-	}
-	States
-	{
-		Spawn:
-			TROO AB 10 A_Look();
-			goto Spawn;
-		See:
-			TROO AABBCCDD 3 A_Chase();
-			goto See;
-	}
-}
-
-CLASS DH_HeadsOnAStick : HeadsOnAStick replaces HeadsOnAStick 28 { 
-	Default {
-		
+		Tag "Hole in ceiling"
 		Radius 12;
 		Height 30;
 		-SOLID;
@@ -1262,36 +1205,23 @@ CLASS DH_HeadsOnAStick : HeadsOnAStick replaces HeadsOnAStick 28 {
 	}
 	States
 	{
+	Spawn:
+		ALHO A -1();
+		stop;
 	}
 }
 
-CLASS DH_HeadOnAStick : HeadOnAStick replaces HeadOnAStick 27 { 
+CLASS AliensTCTwinPipes : HeadOnAStick { 
 	Default {
-		
-		Health 100;
+		Tag "Twin pipes (104 high)"
 		Height 104;
-		Mass 100000;
-	}
-	States
-	{
-	}
-}
-
-CLASS DH_HeadCandles : HeadCandles replaces HeadCandles 29 { 
-	Default {
-		
-		-SOLID;
-		+NOSECTOR;
+		+DONTTHRUST;
 	}
 	States
 	{
 		Spawn:
-			SPID A -1 A_Look();
-			goto Spawn;
-		See:
-			SPID A 6 A_Metal();
-			SPID ABB 5 A_Chase();
-			goto See;
+			ALTP A -1();
+    		stop;
 	}
 }
 
