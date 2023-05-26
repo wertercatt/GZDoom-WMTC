@@ -1,0 +1,1215 @@
+Actor ExplodingDrone : ZombieMan 58923004
+{
+	Health 180
+	Speed 10
+	Radius 16
+	Damage 30
+	PainChance 180
+	Mass 20
+	SeeSound "imp/sight"
+	AttackSound ""
+	DeathSound "imp/death"
+	ActiveSound "imp/active"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	Pain:
+		TROO H 2 
+		TROO H 2 A_Pain
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	Melee:
+		TROO EF 8 A_FaceTarget
+		TROO G 6 A_TroopAttack
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	Missile:
+		TROO A -1 
+		stop
+	Death:
+		TROO I 8 
+		TROO J 8 A_Scream
+		TROO K 6 
+		TROO L 6 A_Fall
+		TROO M -1 
+		stop
+	XDeath:
+		TROO N 5 
+		TROO O 5 A_XScream
+		BEXP D 5 A_Explode
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO U -1 
+		stop
+	}
+}
+
+Actor DH_ShotgunGuy : ShotgunGuy replaces ShotgunGuy 9
+{
+	Health 130
+	Speed 10
+	Radius 30
+	PainChance 180
+	Mass 400
+	SeeSound ""
+	PainSound ""
+	DeathSound ""
+	ActiveSound ""
+	States
+	{
+	Spawn:
+		SARG AA 10 A_Look
+		goto Spawn
+	See:
+		SARG AABBCCDD 2 A_Chase
+		goto See
+	Pain:
+		SARG H 2 
+		SARG H 2 A_Pain
+		SARG AABBCCDD 2 A_Chase
+		goto See
+	Melee:
+		SARG EF 8 A_FaceTarget
+		SARG G 8 A_SargAttack
+		SARG AABBCCDD 2 A_Chase
+		goto See
+	Missile:
+		TROO A -1 
+		stop
+	Death:
+		TROO N 5 
+		TROO O 5 A_XScream
+		BEXP D 5 A_Explode
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO U -1 
+		stop
+	XDeath:
+		TROO A -1 
+		stop
+	}
+}
+
+Actor DH_DoomImp : DoomImp replaces DoomImp 3001
+{
+	Damage 30
+	DeathSound "demon/death"
+	States
+	{
+	XDeath:
+		TROO N 5 
+		TROO O 5 A_XScream
+		BEXP D 5 A_Explode
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO UA -1 
+		stop
+	}
+}
+
+Actor DH_Demon : Demon replaces Demon 3002
+{
+	DeathSound "baron/death"
+	States
+	{
+	Spawn:
+		SARG AA 10 A_Look
+		goto Spawn
+	}
+}
+
+Actor DH_Spectre : Spectre replaces Spectre 58
+{
+	Health 130
+	-SHADOW
+	States
+	{
+	Spawn:
+		SARG AA 10 A_Look
+		goto Spawn
+	Death:
+		TROO N 5 
+		TROO O 5 A_XScream
+		BEXP D 5 A_Explode
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO U -1 
+		stop
+	}
+}
+
+Actor DH_Cacodemon : Cacodemon replaces Cacodemon 3005
+{
+	Health 60
+	Speed 1
+	Radius 16
+	Height 36
+	PainChance 0
+	Mass 60
+	-SOLID
+	-NOGRAVITY
+	-FLOAT
+	-COUNTKILL
+	SeeSound ""
+	PainSound ""
+	States
+	{
+	See:
+		HEAD E 7 
+		HEAD E 7 A_Pain
+		SPID J 7 A_Scream
+		SPID K 7 A_Fall
+		SPID L 7 
+		SPID M 60 
+		SPID NOPQ 7 
+		HEAD BC 6 A_FaceTarget
+		HEAD D 0 Bright A_HeadAttack
+		COL2 A -1 
+		stop
+	Pain:
+		TROO A -1 
+		stop
+	Missile:
+		HEAD E 7 
+		HEAD E 7 A_Pain
+		SPID J 7 A_Scream
+		SPID K 7 A_Fall
+		SPID L 7 
+		SPID M 60 
+		SPID NOPQ 7 
+		HEAD BC 6 A_FaceTarget
+		HEAD D 0 Bright A_HeadAttack
+		COL2 A -1 
+		stop
+	Death:
+		POSS M 5 
+		POSS N 5 A_XScream
+		POSS O 5 A_Fall
+		POSS P -1 
+		stop
+	}
+}
+
+Actor DH_BaronOfHell : BaronOfHell replaces BaronOfHell 3003
+{
+	Health 1500
+	Height 104
+	PainChance 100
+	Mass 1500
+	States
+	{
+	See:
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Pain:
+		POSS C 2 
+		POSS C 2 A_Pain
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Melee:
+		POSS A 8 A_FaceTarget
+		BOSS A 8 A_FaceTarget
+		POSS B 8 A_BruisAttack
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Missile:
+		POSS A 8 A_FaceTarget
+		BOSS A 8 A_FaceTarget
+		POSS B 8 A_BruisAttack
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Death:
+		BOSS I 16 
+		BOSS K 8 
+		BOSS L 8 A_Fall
+		BOSS M 8 
+		BOSS N 12 
+		BOSS O -1 A_BossDeath
+		stop
+	Raise:
+		BOSS ONMLKJI 8 
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_BaronBall : BaronBall replaces BaronBall -1
+{
+	SeeSound ""
+	States
+	{
+	Spawn:
+		BAL7 AB 4 
+		goto Spawn
+	Death:
+		BAL7 CDE 6 
+		stop
+	}
+}
+
+Actor DH_LostSoul : LostSoul replaces LostSoul 3006
+{
+	Health 50
+	Speed 10
+	Height 30
+	-NOGRAVITY
+	-FLOAT
+	+COUNTKILL
+	DeathSound "misc/gibbed"
+	States
+	{
+	Spawn:
+		SPOS AB 10 A_Look
+		goto Spawn
+	See:
+		SPOS AB 6 A_Chase
+		goto See
+	Pain:
+		SPOS E 3 
+		SPOS B 3 A_Pain
+		SPOS AB 6 A_Chase
+		goto See
+	Missile:
+		SPOS C 10 A_FaceTarget
+		SPOS D 4 A_SkullAttack
+	State_591:
+		SPOS CD 4 
+		goto State_591
+	Death:
+		SKUL F 5 
+		SKUL G 5 A_Scream
+		SKUL H 5 
+		SKUL I 5 A_Fall
+		SKUL JK 5 
+		POSS T 5 
+		POSS U -1 
+		stop
+	}
+}
+
+Actor DH_SpiderMastermind : SpiderMastermind replaces SpiderMastermind 7
+{
+	Health 1500
+	Radius 32
+	Height 104
+	PainChance 150
+	Mass 1500
+	SeeSound "baron/sight"
+	AttackSound ""
+	DeathSound "baron/death"
+	States
+	{
+	Spawn:
+		BOSS AB 10 A_Look
+		goto Spawn
+	See:
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Pain:
+		POSS C 2 
+		POSS C 2 A_Pain
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Melee:
+		POSS A 8 A_FaceTarget
+		BOSS A 8 A_FaceTarget
+		POSS B 8 A_BruisAttack
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Missile:
+		TROO A -1 
+		stop
+	Death:
+		BOSS I 16 
+		BOSS K 8 
+		BOSS L 8 A_Fall
+		BOSS M 8 
+		BOSS N 12 
+		BOSS O -1 A_BossDeath
+		stop
+	}
+}
+
+Actor DH_Cyberdemon : Cyberdemon replaces Cyberdemon 16
+{
+	Health 1500
+	Speed 12
+	Radius 32
+	Height 104
+	PainChance 150
+	Mass 1500
+	SeeSound "baron/sight"
+	DeathSound "baron/death"
+	States
+	{
+	Spawn:
+		BOSS AB 10 A_Look
+		goto Spawn
+	See:
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Pain:
+		POSS C 2 
+		POSS C 2 A_Pain
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Melee:
+		POSS A 8 A_FaceTarget
+		BOSS A 8 A_FaceTarget
+		POSS B 8 A_BruisAttack
+		BOSS AABBAADD 3 A_Chase
+		goto See
+	Missile:
+		TROO A -1 
+		stop
+	Death:
+		BOSS I 16 
+		BOSS K 8 
+		BOSS L 8 A_Fall
+		BOSS M 8 
+		BOSS N 12 
+		BOSS O -1 A_BossDeath
+		stop
+	}
+}
+
+Actor DH_ExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel 2035
+{
+	Speed 1
+	States
+	{
+	Death:
+		SPOS N 5 A_XScream
+		SPOS O 5 A_Fall
+		SPOS PQRST 5 
+		SPOS U -1 
+		stop
+	}
+}
+
+Actor DH_DoomImpBall : DoomImpBall replaces DoomImpBall -1
+{
+	States
+	{
+	Spawn:
+		BAL7 AB 4 
+		goto Spawn
+	Death:
+		BAL7 CDE 6 
+		stop
+	}
+}
+
+Actor DH_CacodemonBall : CacodemonBall replaces CacodemonBall -1
+{
+	Health 50
+	Radius 16
+	Height 25
+	Damage 3
+	PainChance 256
+	Mass 50
+	+SOLID
+	+SHOOTABLE
+	-NOBLOCKMAP
+	-NOGRAVITY
+	-DROPOFF
+	-MISSILE
+	+COUNTKILL
+	RenderStyle "Normal"
+	SeeSound ""
+	AttackSound "skull/melee"
+	PainSound "demon/pain"
+	DeathSound "misc/gibbed"
+	ActiveSound "demon/active"
+	States
+	{
+	Spawn:
+		SPOS AB 10 A_Look
+		goto Spawn
+	See:
+		SPOS AB 6 A_Chase
+		goto See
+	Pain:
+		SPOS E 3 
+		SPOS B 3 A_Pain
+		SPOS AB 6 A_Chase
+		goto See
+	Missile:
+		SPOS C 10 A_FaceTarget
+		SPOS D 4 A_SkullAttack
+	State_591:
+		SPOS CD 4 
+		goto State_591
+	Death:
+		SKUL F 5 
+		SKUL G 5 A_Scream
+		SKUL H 5 
+		SKUL I 5 A_Fall
+		SKUL JK 5 
+		POSS T 5 
+		POSS U -1 
+		stop
+	}
+}
+
+Actor DH_Rocket : Rocket replaces Rocket -1
+{
+	Radius 9
+	States
+	{
+	}
+}
+
+Actor DH_PlasmaBall : PlasmaBall replaces PlasmaBall -1
+{
+	Radius 4
+	Height 4
+	States
+	{
+	}
+}
+
+Actor DH_TeleportFog : TeleportFog replaces TeleportFog -1
+{
+	+NOSECTOR
+	RenderStyle "Normal"
+	States
+	{
+	}
+}
+
+Actor DH_TeleportDest : TeleportDest replaces TeleportDest 14
+{
+	Height 300
+	+SOLID
+	+SHOOTABLE
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	}
+}
+
+Actor DH_GreenArmor : GreenArmor replaces GreenArmor 2018
+{
+	States
+	{
+	Spawn:
+		ARM1 A -1 
+		stop
+	}
+}
+
+Actor DH_BlueArmor : BlueArmor replaces BlueArmor 2019
+{
+	+NOSECTOR
+	States
+	{
+	}
+}
+
+Actor DH_Soulsphere : Soulsphere replaces Soulsphere 2013
+{
+	States
+	{
+	Spawn:
+		SOUL ABCDCB 6 
+		goto Spawn
+	}
+}
+
+Actor DH_InvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere 2022
+{
+	States
+	{
+	Spawn:
+		PINV ABCD 6 
+		goto Spawn
+	}
+}
+
+Actor DH_Berserk : Berserk replaces Berserk 2023
+{
+	States
+	{
+	Spawn:
+		PSTR A -1 
+		stop
+	}
+}
+
+Actor DH_BlurSphere : BlurSphere replaces BlurSphere 2024
+{
+	States
+	{
+	Spawn:
+		PINS ABCD 6 
+		goto Spawn
+	}
+}
+
+Actor DH_RadSuit : RadSuit replaces RadSuit 2025
+{
+	States
+	{
+	Spawn:
+		SUIT A -1 
+		stop
+	}
+}
+
+Actor DH_Allmap : Allmap replaces Allmap 2026
+{
+	States
+	{
+	Spawn:
+		PMAP ABCDCB 6 
+		goto Spawn
+	}
+}
+
+Actor DH_BFG9000 : BFG9000 replaces BFG9000 2006
+{
+	Weapon.SlotNumber 7
+	Weapon.SlotPriority 1
+	States
+	{
+	Deselect:
+		SAWG D 10 A_Lower
+	State_67:
+		SAWG CD 14 A_WeaponReady
+		BFGG A 14 A_Light2
+		SAWG D 14 A_Light1
+		goto State_67
+	Select:
+		SAWG B 6 A_Raise
+		BFGG B 6 A_Saw
+		SAWG B 6 A_Saw
+		SAWG A 6 A_ReFire
+		goto Select
+	Ready:
+		BFGG C 60 A_WeaponReady
+		goto Ready
+	Fire:
+		BFGG C 0 A_BFGSound
+		BFGG C 60 A_WeaponReady
+		goto Ready
+	Flash:
+		SAWG D 14 A_Light1
+	State_67:
+		SAWG CD 14 A_WeaponReady
+		BFGG A 14 A_Light2
+		goto Flash
+	}
+}
+
+Actor DH_Chainsaw : Chainsaw replaces Chainsaw 2005
+{
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 1
+	States
+	{
+	Deselect:
+		SAWG C 3 A_Lower
+		goto Deselect
+	Select:
+		SAWG C 3 A_Raise
+		goto Select
+	Ready:
+		SAWG CD 14 A_WeaponReady
+		BFGG A 14 A_Light2
+		SAWG D 14 A_Light1
+		goto Ready
+	Fire:
+		BFGG B 6 A_Saw
+		SAWG B 6 A_Saw
+		SAWG A 6 A_ReFire
+		SAWG B 6 A_Raise
+		goto Fire
+	}
+}
+
+Actor DH_ShortGreenColumn : ShortGreenColumn replaces ShortGreenColumn 31
+{
+	Health 60
+	Height 48
+	+SHOOTABLE
+	DeathSound "caco/death"
+	States
+	{
+	Death:
+		POSS M 5 
+		POSS N 5 A_XScream
+		POSS O 5 A_Fall
+		POSS P -1 
+		stop
+	}
+}
+
+Actor DH_TallRedColumn : TallRedColumn replaces TallRedColumn 32
+{
+	Radius 8
+	Height 72
+	States
+	{
+	}
+}
+
+Actor DH_ShortRedColumn : ShortRedColumn replaces ShortRedColumn 33
+{
+	Radius 8
+	Height 72
+	States
+	{
+	}
+}
+
+Actor DH_EvilEye : EvilEye replaces EvilEye 41
+{
+	Radius 7
+	Height 65
+	States
+	{
+	Spawn:
+		TBLU A 13 Bright 
+		TBLU B 4 Bright 
+		TBLU CD 13 Bright 
+		goto Spawn
+	}
+}
+
+Actor DH_FloatingSkull : FloatingSkull replaces FloatingSkull 42
+{
+	Health 60
+	Height 40
+	Mass 300
+	+SHOOTABLE
+	DeathSound "caco/death"
+	States
+	{
+	Spawn:
+		POL1 A -1 
+		stop
+	Death:
+		POSS M 5 
+		POSS N 5 A_XScream
+		POSS O 5 A_Fall
+		POSS P -1 
+		stop
+	}
+}
+
+Actor DH_TorchTree : TorchTree replaces TorchTree 43
+{
+	Health 999999999
+	Radius 155
+	Height 120
+	Mass 999999999
+	+SHOOTABLE
+	+NOBLOOD
+	States
+	{
+	}
+}
+
+Actor DH_BlueTorch : BlueTorch replaces BlueTorch 44
+{
+	Radius 12
+	Height 192
+	States
+	{
+	Spawn:
+		SPID A -1 A_Look
+		goto Spawn
+	}
+}
+
+Actor DH_GreenTorch : GreenTorch replaces GreenTorch 45
+{
+	-SOLID
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		GOR5 A -1 
+		stop
+	}
+}
+
+Actor DH_RedTorch : RedTorch replaces RedTorch 46
+{
+	-SOLID
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		ARM1 B -1 Bright 
+		stop
+	}
+}
+
+Actor DH_ShortBlueTorch : ShortBlueTorch replaces ShortBlueTorch 55
+{
+	Radius 76
+	Height 104
+	-SOLID
+	States
+	{
+	Spawn:
+		SMBT ABC 4 Bright 
+		goto Spawn
+	}
+}
+
+Actor DH_ShortGreenTorch : ShortGreenTorch replaces ShortGreenTorch 56
+{
+	Health 1
+	Radius 6
+	Height 76
+	Mass 99999999
+	-SOLID
+	+SHOOTABLE
+	+NOBLOOD
+	States
+	{
+	Spawn:
+		CBRA A -1 Bright 
+		stop
+	Death:
+		SMGT ABCD 4 Bright 
+		goto Death
+	XDeath:
+		SMGT ABCD 4 Bright 
+		goto Death
+	}
+}
+
+Actor DH_ShortRedTorch : ShortRedTorch replaces ShortRedTorch 57
+{
+	Radius 10
+	-SOLID
+	States
+	{
+	}
+}
+
+Actor DH_Stalagtite : Stalagtite replaces Stalagtite 47
+{
+	Health 999999999
+	Radius 145
+	Height 104
+	Mass 999999999
+	+SHOOTABLE
+	+NOBLOOD
+	States
+	{
+	}
+}
+
+Actor DH_Candlestick : Candlestick replaces Candlestick 34
+{
+	States
+	{
+	Spawn:
+		SMT2 A -1 
+		stop
+	}
+}
+
+Actor DH_Candelabra : Candelabra replaces Candelabra 35
+{
+	Health 999999999
+	Radius 165
+	Height 154
+	Mass 999999999
+	+SHOOTABLE
+	+NOBLOOD
+	States
+	{
+	Spawn:
+		CYBR P -1 A_BossDeath
+		stop
+	}
+}
+
+Actor DH_BloodyTwitch : BloodyTwitch replaces BloodyTwitch 49
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "weapons/bfgf"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_Meat2 : Meat2 replaces Meat2 50
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "weapons/bfgx"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_Meat3 : Meat3 replaces Meat3 51
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "caco/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_Meat4 : Meat4 replaces Meat4 52
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "cyber/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_Meat5 : Meat5 replaces Meat5 53
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "spider/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_NonsolidMeat2 : NonsolidMeat2 replaces NonsolidMeat2 59
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "cyber/death"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_NonsolidMeat4 : NonsolidMeat4 replaces NonsolidMeat4 60
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "spider/death"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_NonsolidMeat3 : NonsolidMeat3 replaces NonsolidMeat3 61
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "grunt/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_NonsolidMeat5 : NonsolidMeat5 replaces NonsolidMeat5 62
+{
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	States
+	{
+	Spawn:
+		CYBR AB 10 A_Look
+		goto Spawn
+	See:
+		CYBR A 7 A_Hoof
+		CYBR ABBC 7 A_Chase
+		CYBR C 6 A_Chase
+		goto See
+	}
+}
+
+Actor DH_NonsolidTwitch : NonsolidTwitch replaces NonsolidTwitch 63
+{
+	Height 104
+	-SPAWNCEILING
+	-NOGRAVITY
+	States
+	{
+	Spawn:
+		GOR1 ABC 5 
+		GOR2 A 5 
+		GOR3 A 5 
+		goto Spawn
+	}
+}
+
+Actor DH_DeadCacodemon : DeadCacodemon replaces DeadCacodemon 22
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	SeeSound "grunt/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_DeadLostSoul : DeadLostSoul replaces DeadLostSoul 23
+{
+	Radius 32
+	Height 104
+	+SOLID
+	States
+	{
+	Spawn:
+		CYBR O -1 
+		stop
+	}
+}
+
+Actor DH_DeadDoomImp : DeadDoomImp replaces DeadDoomImp 20
+{
+	Radius 32
+	Height 104
+	+SOLID
+	States
+	{
+	Spawn:
+		CYBR O -1 
+		stop
+	}
+}
+
+Actor DH_GibbedMarine : GibbedMarine replaces GibbedMarine 10
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	SeeSound "grunt/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_GibbedMarineExtra : GibbedMarineExtra replaces GibbedMarineExtra 12
+{
+	Health 1
+	Speed 1
+	Height 56
+	PainChance 200
+	+NOSECTOR
+	SeeSound "grunt/sight"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_HeadsOnAStick : HeadsOnAStick replaces HeadsOnAStick 28
+{
+	Radius 12
+	Height 30
+	-SOLID
+	+SPAWNCEILING
+	+NOGRAVITY
+	States
+	{
+	}
+}
+
+Actor DH_HeadOnAStick : HeadOnAStick replaces HeadOnAStick 27
+{
+	Health 100
+	Height 104
+	Mass 100000
+	States
+	{
+	}
+}
+
+Actor DH_HeadCandles : HeadCandles replaces HeadCandles 29
+{
+	-SOLID
+	+NOSECTOR
+	States
+	{
+	Spawn:
+		SPID A -1 A_Look
+		goto Spawn
+	See:
+		SPID A 6 A_Metal
+		SPID ABB 5 A_Chase
+		goto See
+	}
+}
+
+Actor DH_DeadStick : DeadStick replaces DeadStick 25
+{
+	Health 1
+	Speed 1
+	Radius 20
+	Height 56
+	PainChance 200
+	-SOLID
+	+NOSECTOR
+	SeeSound "spider/walk"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		goto Spawn
+	See:
+		TROO AABBCCDD 3 A_Chase
+		goto See
+	}
+}
+
+Actor DH_BigTree : BigTree replaces BigTree 54
+{
+	Health 150
+	Radius 16
+	Height 76
+	Mass -99999999
+	+SHOOTABLE
+	+NOBLOOD
+	States
+	{
+	Death:
+		HEAD G 5 
+		HEAD H 5 A_Scream
+		HEAD IJ 5 
+		HEAD K 5 A_Fall
+		HEAD L 5 
+		GOR4 A -1 
+		stop
+	}
+}
+

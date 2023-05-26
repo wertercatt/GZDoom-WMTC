@@ -1,0 +1,106 @@
+// Raccoon's DECtoZSC Converter test file.
+// This should be comments, and the following should come out as syntactically-correct ZScript
+
+// Also, make sure the word "actor" being in comments doesn't do something weird...
+
+ACTOR ExplosiveBarrel
+{
+	Health 20
+	Radius 10
+	Height 42
+	+SOLID
+	+SHOOTABLE
+	+NOBLOOD
+	+ACTIVATEMCROSS
+	+DONTGIB
+	+NOICEDEATH
+	+OLDRADIUSDMG
+	DeathSound "world/barrelx"
+	Obituary "$OB_BARREL" // "%o went boom."
+
+	States
+	{
+		Spawn:
+			BAR1 AB 6
+			Loop // A comment
+		Death:
+			BEXP A 5 Bright // Another Comment
+			BEXP B 5 Bright A_Scream
+			BEXP C 5 Bright
+			BEXP D 5 Bright A_Explode(test)
+			BEXP E 10 Bright A_SetRenderStyle(Add)
+			TNT1 A 1050 Bright A_BarrelDestroy
+			TNT1 A 5 A_Respawn
+			Wait
+	}
+}
+
+/* A Block Comment
+Just to see if they work
+And if this is a block comment, they do!*/
+
+ACTOR ShortRedColumn // test
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16;
+  +SOLID
+  States {
+  Spawn:
+    COL4 A -1;
+    Stop
+  }
+}
+ACTOR ShortRedColumn
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    COL4 A -1 function()
+    Stop
+  }
+}
+
+ACTOR ShorterRedderColumn : ShortRedColumn {
+  Radius 16
+  Height 30
+  ProjectilePassHeight -16
+  +SOLID;;
+  States
+  {
+  Spawn:
+    COL4 A -1 CanRaise
+    Stop
+  }
+}
+ACTOR ShorterRedderColumn : ShortRedColumn // The stateless version!
+{
+  Radius 16
+  Height 30;
+  ProjectilePassHeight -16
+  +SOLID
+}
+
+
+// HAVE ANOTHER COMMENT IN HERE!
+
+
+ACTOR TheShortestMostReddestOfColumns : ShorterRedderColumn {
+  Radius 16
+  Height 30
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    COL4 A -1 CanRaise
+    Stop
+  }
+}
+
+
+// This is the end of the file.
