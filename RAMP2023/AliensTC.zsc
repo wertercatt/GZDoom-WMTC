@@ -1295,28 +1295,6 @@ CLASS DH_HeadCandles : HeadCandles replaces HeadCandles 29 {
 	}
 }
 
-CLASS DH_DeadStick : DeadStick replaces DeadStick 25 { 
-	Default {
-		
-		Health 1;
-		Speed 1;
-		Radius 20;
-		Height 56;
-		PainChance 200;
-		-SOLID;
-		+NOSECTOR;
-		SeeSound "spider/walk";
-	}
-	States
-	{
-		Spawn:
-			TROO AB 10 A_Look();
-			goto Spawn;
-		See:
-			TROO AABBCCDD 3 A_Chase();
-			goto See;
-	}
-}
 
 CLASS AliensTCDestroyableSlimeColumn : BigTree { 
 	Default {
