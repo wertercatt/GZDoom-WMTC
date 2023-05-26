@@ -11,6 +11,8 @@ CLASS AliensTCLightweightDrone : ZombieMan {
 		AttackSound "";
 		DeathSound "imp/death";
 		ActiveSound "imp/active";
+                Obituary "%o was killed by an Alien Drone"
+                Tag "Alien Drone"
 	}
 	States
 	{
