@@ -801,9 +801,11 @@ CLASS DH_BlueTorch : BlueTorch replaces BlueTorch 44 {
 	}
 }
 
-CLASS DH_GreenTorch : GreenTorch replaces GreenTorch 45 { 
+CLASS AliensTCHangingLightDead : GreenTorch replaces GreenTorch 45 { 
 	Default {
-		
+		Tag "Hanging light (dead)";
+		Radius 24;
+		Height 32;
 		-SOLID;
 		+SPAWNCEILING;
 		+NOGRAVITY;
@@ -811,14 +813,16 @@ CLASS DH_GreenTorch : GreenTorch replaces GreenTorch 45 {
 	States
 	{
 		Spawn:
-			GOR5 A -1();
+			ALHL B -1();
 			stop;
 	}
 }
 
-CLASS DH_RedTorch : RedTorch replaces RedTorch 46 { 
+CLASS AliensTCHangingLightLit : RedTorch { 
 	Default {
-		
+		Tag "Hanging light (Lit)";
+		Radius 24;
+		Height 32;
 		-SOLID;
 		+SPAWNCEILING;
 		+NOGRAVITY;
@@ -826,14 +830,14 @@ CLASS DH_RedTorch : RedTorch replaces RedTorch 46 {
 	States
 	{
 		Spawn:
-			ARM1 B -1 Bright;
+			ALHL A -1 Bright;
 			stop;
 	}
 }
 
-CLASS DH_ShortBlueTorch : ShortBlueTorch replaces ShortBlueTorch 55 { 
+CLASS AliensTCLargeFlames : ShortBlueTorch { 
 	Default {
-		
+		Tag "Large flames"
 		Radius 76;
 		Height 104;
 		-SOLID;
@@ -841,18 +845,18 @@ CLASS DH_ShortBlueTorch : ShortBlueTorch replaces ShortBlueTorch 55 {
 	States
 	{
 		Spawn:
-			SMBT ABC 4 Bright;
+			ALLF ABCD 4 Bright;
 			goto Spawn;
 	}
 }
 
-CLASS DH_ShortGreenTorch : ShortGreenTorch replaces ShortGreenTorch 56 { 
+CLASS AliensTCSmallFlameOnSlimePile : ShortGreenTorch { 
 	Default {
-		
+		Tag "Small flame on slime pile"
 		Health 1;
 		Radius 6;
 		Height 76;
-		Mass 99999999;
+		+DONTTHRUST;
 		-SOLID;
 		+SHOOTABLE;
 		+NOBLOOD;
@@ -860,13 +864,13 @@ CLASS DH_ShortGreenTorch : ShortGreenTorch replaces ShortGreenTorch 56 {
 	States
 	{
 		Spawn:
-			CBRA A -1 Bright;
+			ALIN A -1 Bright;
 			stop;
 		Death:
-			SMGT ABCD 4 Bright;
+			ALSF EFGH 4 Bright;
 			goto Death;
 		XDeath:
-			SMGT ABCD 4 Bright;
+			ALSF EFGH 4 Bright;
 			goto Death;
 	}
 }
