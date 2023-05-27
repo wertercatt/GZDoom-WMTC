@@ -615,15 +615,16 @@ CLASS DH_RadSuit : RadSuit replaces RadSuit 2025 {
 	}
 }
 
-CLASS DH_Allmap : Allmap replaces Allmap 2026 { 
+CLASS AliensTCComputerTerminal : Allmap { 
 	Default {
-		
+		Tag "Computer Terminal";
+		Inventory.PickupMessage "Computer Terminal";
 	}
 	States
 	{
 		Spawn:
-			PMAP ABCDCB 6();
-			goto Spawn;
+			ALCT ABCDCB 6();
+			loop;
 	}
 }
 
@@ -633,8 +634,10 @@ CLASS AliensTCCargoBayLoader : Chainsaw {
 		Weapon.SlotNumber 1;
 		Weapon.SlotPriority 1;
 		Inventory.PickupMessage "The Cargo bay loader!";
-		Weapon.UpSound "alienstc/alclup"
-		Weapon.ReadySound "alienstc/alclidle"
+		Weapon.UpSound "alienstc/alclup";
+		Weapon.ReadySound "alienstc/alclidle";
+		Armor.SavePercent 50;
+		Armor.SaveAmount 200;
 	}
 	States
 	{
@@ -655,6 +658,9 @@ CLASS AliensTCCargoBayLoader : Chainsaw {
 			ALCL F 6 A_ReFire();
 			ALCL E 6 A_Raise();
 			loop;
+		Spawn:
+			ALCL G -1();
+			stop;
 	}
 }
 
