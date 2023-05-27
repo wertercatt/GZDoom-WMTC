@@ -627,81 +627,50 @@ CLASS DH_Allmap : Allmap replaces Allmap 2026 {
 	}
 }
 
-CLASS DH_BFG9000 : BFG9000 replaces BFG9000 2006 { 
+CLASS AliensTCCargoBayLoader : Chainsaw { 
 	Default {
-		
-		Weapon.SlotNumber 7;
-		Weapon.SlotPriority 1;
-	}
-	States
-	{
-		Deselect:
-			SAWG D 10 A_Lower();
-		State_67:
-			SAWG CD 14 A_WeaponReady();
-			BFGG A 14 A_Light2();
-			SAWG D 14 A_Light1();
-			goto State_67;
-		Select:
-			SAWG B 6 A_Raise();
-			BFGG B 6 A_Saw();
-			SAWG B 6 A_Saw();
-			SAWG A 6 A_ReFire();
-			goto Select;
-		Ready:
-			BFGG C 60 A_WeaponReady();
-			goto Ready;
-		Fire:
-			BFGG C 0 A_BFGSound();
-			BFGG C 60 A_WeaponReady();
-			goto Ready;
-		Flash:
-			SAWG D 14 A_Light1();
-		State_67:
-			SAWG CD 14 A_WeaponReady();
-			BFGG A 14 A_Light2();
-			goto Flash;
-	}
-}
-
-CLASS DH_Chainsaw : Chainsaw replaces Chainsaw 2005 { 
-	Default {
-		
+		Tag "Cargo Bay Loader";
 		Weapon.SlotNumber 1;
 		Weapon.SlotPriority 1;
+		Inventory.PickupMessage "The Cargo bay loader!";
+		Weapon.UpSound "alienstc/alclup"
+		Weapon.ReadySound "alienstc/alclidle"
 	}
 	States
 	{
 		Deselect:
-			SAWG C 3 A_Lower();
-			goto Deselect;
+			ALCL A 3 A_Lower();
+			loop;
 		Select:
-			SAWG C 3 A_Raise();
-			goto Select;
+			ALCL A 3 A_Raise();
+			loop;
 		Ready:
-			SAWG CD 14 A_WeaponReady();
-			BFGG A 14 A_Light2();
-			SAWG D 14 A_Light1();
-			goto Ready;
+			ALCL AB 14 A_WeaponReady();
+			ALCL C 14 A_Light2();
+			ALCL B 14 A_Light1();
+			loop;
 		Fire:
-			BFGG B 6 A_Saw();
-			SAWG B 6 A_Saw();
-			SAWG A 6 A_ReFire();
-			SAWG B 6 A_Raise();
-			goto Fire;
+			ALCL D 6 A_Saw("alienstc/alclful", "alienstc/alclhit", 50);
+			ALCL E 6 A_Saw("alienstc/alclful", "alienstc/alclhit", 50);
+			ALCL F 6 A_ReFire();
+			ALCL E 6 A_Raise();
+			loop;
 	}
 }
 
-CLASS DH_ShortGreenColumn : ShortGreenColumn replaces ShortGreenColumn 31 { 
+CLASS AliensTCFacehuggerEggHatched : ShortGreenColumn { 
 	Default {
-		
+		Tag "Facehugger Egg, hatched";
 		Health 60;
 		Height 48;
 		+SHOOTABLE;
-		DeathSound "aleg/death";
+		DeathSound "alienstc/alegdth";
 	}
 	States
 	{
+		Spawn:
+			ALEG F -1();
+			stop;
 		Death:
 			ALEG B 5();
 			ALEG C 5 A_XScream();
@@ -711,25 +680,31 @@ CLASS DH_ShortGreenColumn : ShortGreenColumn replaces ShortGreenColumn 31 {
 	}
 }
 
-CLASS DH_TallRedColumn : TallRedColumn replaces TallRedColumn 32 { 
+CLASS AliensTCSlimeColumn2 : TallRedColumn { 
 	Default {
-		
+		Tag "Slime column 2 (104 high)";
 		Radius 8;
 		Height 72;
 	}
 	States
 	{
+		Spawn:
+			ALSC I -1();
+			stop;
 	}
 }
 
-CLASS DH_ShortRedColumn : ShortRedColumn replaces ShortRedColumn 33 { 
+CLASS AliensTCSlimeColumn1 : ShortRedColumn { 
 	Default {
-		
+		Tag "Slime column 1 (104 high)";
 		Radius 8;
 		Height 72;
 	}
 	States
 	{
+		Spawn:
+			ALSC H -1();
+			stop;
 	}
 }
 
@@ -756,7 +731,7 @@ CLASS AliensTCFacehuggerEggUnhatched : FloatingSkull {
 		Height 40;
 		Mass 300;
 		+SHOOTABLE;
-		DeathSound "aleg/death";
+		DeathSound "alienstc/alegdth";
 	}
 	States
 	{
