@@ -502,6 +502,30 @@ CLASS AliensTCSmartGun : PlasmaRifle {
 		Tag "Smart Gun";
 		Inventory.PickupMessage "A Smart-gun! LETS ROCK!"
 	}
+	States
+	{
+	Ready:
+		ALSG I 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		ALSG I 1 A_Lower;
+		Loop;
+	Select:
+		ALSG I 1 A_Raise;
+		Loop;
+	Fire:
+		ALSG I 3 AliensTC_FireSmartGun;
+		ALSG J 20 A_ReFire;
+		Goto Ready;
+	Flash:
+		ALSG K 4 Bright A_Light1;
+		Goto LightDone;
+		ALSG L 4 Bright A_Light1;
+		Goto LightDone;
+	Spawn:
+		ALSG M -1;
+		Stop;
+	}
 }
 
 CLASS AliensTCSmartGunProjectile : PlasmaBall { 
@@ -518,6 +542,39 @@ CLASS AliensTCSmartGunProjectile : PlasmaBall {
 	Death:
 		ALSG CDEFG 4 Bright;
 		Stop;
+	}
+}
+
+extend class StateProvider
+{
+
+	//===========================================================================
+	//
+	// AliensTC_FireSmartGun
+	//
+	//===========================================================================
+
+	action void AliensTC_FireSmartGun()
+	{
+		if (player == null)
+		{
+			return;
+		}
+		Weapon weap = player.ReadyWeapon;
+		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+		{
+			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
+				return;
+			
+			State flash = weap.FindState('Flash');
+			if (flash != null)
+			{
+				player.SetSafeFlash(weap, flash, random[FirePlasma](0, 1));
+			}
+			
+		}
+		
+		SpawnPlayerMissile ("AliensTCSmartGunProjectile");
 	}
 }
 
