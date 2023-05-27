@@ -201,10 +201,10 @@ CLASS DH_Cacodemon : Cacodemon replaces Cacodemon 3005 {
 			COL2 A -1();
 			stop;
 		Death:
-			POSS M 5();
-			POSS N 5 A_XScream();
-			POSS O 5 A_Fall();
-			POSS P -1();
+			ALEG B 5();
+			ALEG C 5 A_XScream();
+			ALEG D 5 A_Fall();
+			ALEG E -1();
 			stop;
 	}
 }
@@ -703,10 +703,10 @@ CLASS DH_ShortGreenColumn : ShortGreenColumn replaces ShortGreenColumn 31 {
 	States
 	{
 		Death:
-			POSS M 5();
-			POSS N 5 A_XScream();
-			POSS O 5 A_Fall();
-			POSS P -1();
+			ALEG B 5();
+			ALEG C 5 A_XScream();
+			ALEG D 5 A_Fall();
+			ALEG E -1();
 			stop;
 	}
 }
@@ -749,9 +749,9 @@ CLASS DH_EvilEye : EvilEye replaces EvilEye 41 {
 	}
 }
 
-CLASS DH_FloatingSkull : FloatingSkull replaces FloatingSkull 42 { 
+CLASS AliensTCFacehuggerEggUnhatched : FloatingSkull { 
 	Default {
-		
+		Tag "Facehugger Egg, unhatched"
 		Health 60;
 		Height 40;
 		Mass 300;
@@ -761,13 +761,13 @@ CLASS DH_FloatingSkull : FloatingSkull replaces FloatingSkull 42 {
 	States
 	{
 		Spawn:
-			POL1 A -1();
+			ALEG A -1();
 			stop;
 		Death:
-			POSS M 5();
-			POSS N 5 A_XScream();
-			POSS O 5 A_Fall();
-			POSS P -1();
+			ALEG B 5();
+			ALEG C 5 A_XScream();
+			ALEG D 5 A_Fall();
+			ALEG E -1();
 			stop;
 	}
 }
