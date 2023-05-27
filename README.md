@@ -20,4 +20,4 @@ _We Mapped This City_ uses assets from the following:
 - _Freedoom: Phase 2_ by the contributors of the Freedoom project
 - _Marine Doom_ by Sergeant Daniel G. Snyder, USMC
 - _NCC1701.wad_ by Ryan Polczer
-- _RAMP 2021_ by David Newton
+- _RAMP 2021/2023_ by David Newton and the Doom community
