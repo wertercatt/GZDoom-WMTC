@@ -698,7 +698,7 @@ CLASS DH_ShortGreenColumn : ShortGreenColumn replaces ShortGreenColumn 31 {
 		Health 60;
 		Height 48;
 		+SHOOTABLE;
-		DeathSound "caco/death";
+		DeathSound "aleg/death";
 	}
 	States
 	{
@@ -733,30 +733,30 @@ CLASS DH_ShortRedColumn : ShortRedColumn replaces ShortRedColumn 33 {
 	}
 }
 
-CLASS DH_EvilEye : EvilEye replaces EvilEye 41 { 
+CLASS AliensTCLandingLights : EvilEye { 
 	Default {
-		
+		Tag "Landing lights";
 		Radius 7;
 		Height 65;
 	}
 	States
 	{
 		Spawn:
-			TBLU A 13 Bright;
-			TBLU B 4 Bright;
-			TBLU CD 13 Bright;
-			goto Spawn;
+			ALLT A 13 Bright;
+			ALLT B 4 Bright;
+			ALLT CD 13 Bright;
+			loop;
 	}
 }
 
 CLASS AliensTCFacehuggerEggUnhatched : FloatingSkull { 
 	Default {
-		Tag "Facehugger Egg, unhatched"
+		Tag "Facehugger Egg, unhatched";
 		Health 60;
 		Height 40;
 		Mass 300;
 		+SHOOTABLE;
-		DeathSound "caco/death";
+		DeathSound "aleg/death";
 	}
 	States
 	{
