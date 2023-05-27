@@ -772,32 +772,33 @@ CLASS DH_FloatingSkull : FloatingSkull replaces FloatingSkull 42 {
 	}
 }
 
-CLASS DH_TorchTree : TorchTree replaces TorchTree 43 { 
+CLASS AliensTCBigRock2 : TorchTree { 
 	Default {
-		
-		Health 999999999;
+		Tag "Big Rock 2";
 		Radius 155;
 		Height 120;
-		Mass 999999999;
-		+SHOOTABLE;
-		+NOBLOOD;
+		+DONTTHRUST;
 	}
 	States
 	{
+		  Spawn:
+			ALBR B -1();
+			stop:
+	}
 	}
 }
 
-CLASS DH_BlueTorch : BlueTorch replaces BlueTorch 44 { 
+CLASS AliensTCLadder : BlueTorch { 
 	Default {
-		
+		Tag "Ladder (192 high)";
 		Radius 12;
 		Height 192;
 	}
 	States
 	{
 		Spawn:
-			SPID A -1 A_Look();
-			goto Spawn;
+			ALLD A -1 A_Look();
+			loop;
 	}
 }
 
