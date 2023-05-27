@@ -603,15 +603,13 @@ CLASS DH_BlurSphere : BlurSphere replaces BlurSphere 2024 {
 	}
 }
 
-CLASS DH_RadSuit : RadSuit replaces RadSuit 2025 { 
+CLASS AliensTCVacuumEVASuit : RadSuit { 
 	Default {
-		
+		Tag "Vacuum / EVA Suit";
+		Inventory.PickupMessage "Vacuum / EVA Suit";
 	}
 	States
 	{
-		Spawn:
-			SUIT A -1();
-			stop;
 	}
 }
 
