@@ -2,4 +2,5 @@ map ALIENSTC "We Mapped This City: Aliens TC" {
 	Next = "HUBMAP"
 	SecretNext = "ALIENSTCSECRET"
 	Music = "BISHOP"
+	Sky = "ALSKY"
 }

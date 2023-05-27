@@ -1,0 +1,29 @@
+flat alvldst
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
+flat alhldst
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
+flat alwater
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
+    pic 4 tics 5
+texture alslimefall
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
+    pic 4 tics 5
+texture alblinken
+    pic 1 tics 5
+    pic 2 tics 5
+texture alscreens
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
+texture aldrain
+    pic 1 tics 5
+    pic 2 tics 5
+    pic 3 tics 5
