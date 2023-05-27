@@ -487,13 +487,26 @@ CLASS Facehugger : CacodemonBall replaces CacodemonBall -1 {
 	}
 }
 
-CLASS DH_Rocket : Rocket replaces Rocket -1 { 
+CLASS AliensTCGrenade : Rocket { 
 	Default {
-		
+		Tag "Grenade";
+		SeeSound "alienstc/grenadelaunch";
+		DeathSound "alienstc/grenadeexplode";
 		Radius 9;
 	}
-	States
 	{
+	Spawn:
+		ALGR A 1 Bright;
+		Loop;
+	Death:
+		ALGR B 8 Bright A_Explode;
+		ALGR C 6 Bright;
+		ALGR D 4 Bright;
+		Stop;
+	BrainExplode:
+		ALGR BC 10 Bright;
+		ALGR D 10 A_BrainExplode;
+		Stop;
 	}
 }
 

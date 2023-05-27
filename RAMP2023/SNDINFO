@@ -4,8 +4,15 @@ alienstc/alegdth    alegdth
 
 // Aliens TC Weapons
 
+// Cargo Bay Loader
 alienstc/alclup alclup
 alienstc/alclidle    alclidl
 alienstc/alclful    alclful
 alienstc/alclhit    alclhit
+
+//Smart Gun
 alienstc/alsgf  alsgf
+
+// Plasma Rifle
+alienstc/grenadelaunch algrlnch
+alienstc/grenadeexplode algrexp
