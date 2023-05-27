@@ -497,109 +497,40 @@ CLASS DH_Rocket : Rocket replaces Rocket -1 {
 	}
 }
 
-CLASS DH_PlasmaBall : PlasmaBall replaces PlasmaBall -1 { 
+CLASS AliensTCSmartGun : PlasmaRifle {
 	Default {
-		
+		Tag "Smart Gun";
+		Inventory.PickupMessage "A Smart-gun! LETS ROCK!"
+	}
+}
+
+CLASS AliensTCSmartGunProjectile : PlasmaBall { 
+	Default {
+		SeeSound "alienstc/alsgf";
 		Radius 4;
 		Height 4;
 	}
 	States
 	{
+ 	Spawn:
+		ALSG AB 6 Bright;
+		Loop;
+	Death:
+		ALSG CDEFG 4 Bright;
+		Stop;
 	}
 }
 
-CLASS DH_TeleportFog : TeleportFog replaces TeleportFog -1 { 
+CLASS AliensTCArmor : GreenArmor { 
 	Default {
-		
-		+NOSECTOR;
-		RenderStyle "Normal";
-	}
-	States
-	{
-	}
-}
-
-CLASS DH_TeleportDest : TeleportDest replaces TeleportDest 14 { 
-	Default {
-		
-		Height 300;
-		+SOLID;
-		+SHOOTABLE;
-		+SPAWNCEILING;
-		+NOGRAVITY;
-	}
-	States
-	{
-	}
-}
-
-CLASS DH_GreenArmor : GreenArmor replaces GreenArmor 2018 { 
-	Default {
-		
+		Tag "Aliens TC Armor";
+		Inventory.Icon "ALRMA1A0";
 	}
 	States
 	{
 		Spawn:
-			ARM1 A -1();
+			ALRM A -1();
 			stop;
-	}
-}
-
-CLASS DH_BlueArmor : BlueArmor replaces BlueArmor 2019 { 
-	Default {
-		
-		+NOSECTOR;
-	}
-	States
-	{
-	}
-}
-
-CLASS DH_Soulsphere : Soulsphere replaces Soulsphere 2013 { 
-	Default {
-		
-	}
-	States
-	{
-		Spawn:
-			SOUL ABCDCB 6();
-			goto Spawn;
-	}
-}
-
-CLASS DH_InvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere 2022 { 
-	Default {
-		
-	}
-	States
-	{
-		Spawn:
-			PINV ABCD 6();
-			goto Spawn;
-	}
-}
-
-CLASS DH_Berserk : Berserk replaces Berserk 2023 { 
-	Default {
-		
-	}
-	States
-	{
-		Spawn:
-			PSTR A -1();
-			stop;
-	}
-}
-
-CLASS DH_BlurSphere : BlurSphere replaces BlurSphere 2024 { 
-	Default {
-		
-	}
-	States
-	{
-		Spawn:
-			PINS ABCD 6();
-			goto Spawn;
 	}
 }
 
