@@ -11,8 +11,8 @@ CLASS AliensTCLightweightDrone : ZombieMan {
 		AttackSound "";
 		DeathSound "imp/death";
 		ActiveSound "imp/active";
-		Obituary "%o was killed by an Alien Drone"
-		Tag "Alien Drone"
+		Obituary "%o was killed by an Alien Drone";
+		Tag "Alien Drone";
 	}
 	States
 	{
@@ -55,7 +55,8 @@ CLASS AliensTCLightweightDrone : ZombieMan {
 
 CLASS AliensTCSilentExplodingWarrior : ShotgunGuy { 
 	Default {
-		
+		Tag "Alien Warrior";
+		Obituary "%o was killed by an Alien Warrior";
 		Health 130;
 		Speed 10;
 		Radius 30;
@@ -284,15 +285,15 @@ CLASS DH_LostSoul : LostSoul replaces LostSoul 3006 {
 	States
 	{
 		Spawn:
-			SPOS AB 10 A_Look();
+			ALFH AB 10 A_Look();
 			goto Spawn;
 		See:
-			SPOS AB 6 A_Chase();
+			ALFH AB 6 A_Chase();
 			goto See;
 		Pain:
 			SPOS E 3();
-			SPOS B 3 A_Pain();
-			SPOS AB 6 A_Chase();
+			ALFH B 3 A_Pain();
+			ALFH AB 6 A_Chase();
 			goto See;
 		Missile:
 			SPOS C 10 A_FaceTarget();
@@ -433,9 +434,10 @@ CLASS DH_DoomImpBall : DoomImpBall replaces DoomImpBall -1 {
 	}
 }
 
-CLASS Facehugger : CacodemonBall replaces CacodemonBall -1 { 
+CLASS AliensTCFacehugger : CacodemonBall { 
 	Default {
-		
+		Tag "Facehugger";
+		Obituary "%o was killed by a Facehugger";
 		Health 50;
 		Radius 16;
 		Height 25;
@@ -451,30 +453,30 @@ CLASS Facehugger : CacodemonBall replaces CacodemonBall -1 {
 		+COUNTKILL;
 		RenderStyle "Normal";
 		SeeSound "";
-		AttackSound "skull/melee";
-		PainSound "demon/pain";
+		AttackSound "alienstc/facehuggerattack";
+		PainSound "alienstc/facehuggerpain";
 		DeathSound "misc/gibbed";
-		ActiveSound "demon/active";
+		ActiveSound "alienstc/facehuggeractive";
 	}
 	States
 	{
 		Spawn:
-			SPOS AB 10 A_Look();
-			goto Spawn;
+			ALFH AB 10 A_Look();
+			loop;
 		See:
-			SPOS AB 6 A_Chase();
-			goto See;
+			ALFH AB 6 A_Chase();
+			loop;
 		Pain:
 			SPOS E 3();
-			SPOS B 3 A_Pain();
-			SPOS AB 6 A_Chase();
+			ALFH B 3 A_Pain();
+			ALFH AB 6 A_Chase();
 			goto See;
 		Missile:
 			SPOS C 10 A_FaceTarget();
 			SPOS D 4 A_SkullAttack();
 		State_591:
 			SPOS CD 4();
-			goto State_591;
+			loop;
 		Death:
 			SKUL F 5();
 			SKUL G 5 A_Scream();

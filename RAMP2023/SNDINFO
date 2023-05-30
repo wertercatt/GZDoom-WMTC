@@ -1,6 +1,14 @@
+//Aliens TC Enemies
+
 // Facehugger Egg
 
 alienstc/alegdth    alegdth
+
+// Facehugger
+
+alienstc/facehuggerattack alfhatk
+alienstc/facehuggerpain alfhpain
+alienstc/facehuggeractive alfhact
 
 // Aliens TC Weapons
 
